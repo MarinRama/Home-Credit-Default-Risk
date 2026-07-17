@@ -1,0 +1,29 @@
+# Données volumineuses
+data/raw/
+data/interim/
+data/processed/
+
+# Environnement virtuel
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Variables sensibles
+.env
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Tests et outils
+.pytest_cache/
+
+# macOS
+.DS_Store

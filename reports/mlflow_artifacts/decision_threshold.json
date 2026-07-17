@@ -1,0 +1,6 @@
+{
+  "decision_threshold": 0.5,
+  "false_negative_cost": 10,
+  "false_positive_cost": 1,
+  "positive_class": 1
+}
