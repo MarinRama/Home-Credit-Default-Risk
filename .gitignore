@@ -1,29 +1,45 @@
+# ==========================
 # Données volumineuses
+# ==========================
 data/raw/
 data/interim/
 data/processed/
 
-# Environnement virtuel
+# ==========================
+# Environnements virtuels
+# ==========================
 .venv/
 venv/
 
+# ==========================
 # Python
+# ==========================
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
 
+# ==========================
 # Variables sensibles
+# ==========================
 .env
 
+# ==========================
 # MLflow
+# ==========================
 mlruns/
 mlflow.db
 
+# ==========================
 # Jupyter
+# ==========================
 .ipynb_checkpoints/
+*-Copy*.ipynb
 
-# Tests et outils
+# ==========================
+# Tests
+# ==========================
 .pytest_cache/
 
+# ==========================
 # macOS
+# ==========================
 .DS_Store
