@@ -64,3 +64,7 @@ coverage.xml
 *.sqlite3
 *.sqlite3-wal
 *.sqlite3-shm
+
+# Rapports générés par les vérifications automatisées
+reports/tests/
+reports/deployment/
