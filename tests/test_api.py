@@ -141,3 +141,44 @@ def test_unavailable_model(client, monkeypatch):
     response = client.get("/health")
 
     assert response.status_code == 503
+
+@pytest.mark.parametrize(
+    "feature, invalid_value",
+    [
+        ("AMT_CREDIT", -100),
+        ("AMT_INCOME_TOTAL", -1),
+        ("AMT_ANNUITY", -10),
+        ("AMT_GOODS_PRICE", -1),
+        ("CNT_CHILDREN", -1),
+        ("CNT_CHILDREN", 1.5),
+        ("CNT_FAM_MEMBERS", 0),
+        ("CNT_FAM_MEMBERS", 2.5),
+        ("OWN_CAR_AGE", -1),
+        ("AGE_YEARS", -5),
+        ("EXT_SOURCE_1", -0.1),
+        ("EXT_SOURCE_2", 1.1),
+        ("EXT_SOURCE_3", 2),
+    ],
+)
+def test_out_of_range_values(
+    client,
+    valid_payload,
+    feature,
+    invalid_value,
+):
+    valid_payload["features"][feature] = invalid_value
+
+    response = client.post("/predict", json=valid_payload)
+
+    assert response.status_code == 422
+    assert feature in response.json()["detail"]
+
+
+@pytest.mark.parametrize("value", [0, 1, None])
+def test_external_score_boundaries(client, valid_payload, value):
+    valid_payload["features"]["EXT_SOURCE_1"] = value
+
+    response = client.post("/predict", json=valid_payload)
+
+    assert response.status_code == 200
+    assert 0 <= response.json()["score"] <= 1

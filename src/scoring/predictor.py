@@ -10,6 +10,26 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
+# Contraintes du contrat d'entrée.
+# None signifie qu'aucune limite n'est définie de ce côté.
+FEATURE_BOUNDS = {
+    "AMT_CREDIT": (0, None),
+    "AMT_INCOME_TOTAL": (0, None),
+    "AMT_ANNUITY": (0, None),
+    "AMT_GOODS_PRICE": (0, None),
+    "CNT_CHILDREN": (0, None),
+    "CNT_FAM_MEMBERS": (1, None),
+    "OWN_CAR_AGE": (0, None),
+    "AGE_YEARS": (0, None),
+    "EXT_SOURCE_1": (0, 1),
+    "EXT_SOURCE_2": (0, 1),
+    "EXT_SOURCE_3": (0, 1),
+}
+
+INTEGER_FEATURES = {
+    "CNT_CHILDREN",
+    "CNT_FAM_MEMBERS",
+}
 
 class CreditPredictor:
     def __init__(self, models_dir=None):
@@ -97,6 +117,26 @@ class CreditPredictor:
                     "Utiliser null pour une valeur manquante."
                 )
 
+            bounds = FEATURE_BOUNDS.get(name)
+
+            if bounds is not None:
+                minimum, maximum = bounds
+
+                if minimum is not None and numeric_value < minimum:
+                    raise ValueError(
+                        f"{name} doit être supérieur ou égal à {minimum}."
+                    )
+
+                if maximum is not None and numeric_value > maximum:
+                    raise ValueError(
+                        f"{name} doit être inférieur ou égal à {maximum}."
+                    )
+
+            if name in INTEGER_FEATURES and not numeric_value.is_integer():
+                raise ValueError(
+                    f"{name} doit être un nombre entier."
+                )
+            
             values.append(numeric_value)
 
         if all(math.isnan(value) for value in values):
