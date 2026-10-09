@@ -7,6 +7,8 @@ import joblib
 import numpy as np
 import pandas as pd
 
+from time import perf_counter
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
@@ -149,13 +151,22 @@ class CreditPredictor:
             columns=self.feature_names,
         )
 
-    def predict(self, features):
+
+    def predict(self, features, timings=None):
         prepared = self.prepare_input(features)
 
+        start = perf_counter()
+
+        try:
+            probabilities = self.model.predict_proba(prepared)
+        finally:
+            if timings is not None:
+                timings["inference_ms"] = (
+                    perf_counter() - start
+                ) * 1000
+
         score = float(
-            self.model.predict_proba(prepared)[
-                0, self.default_class_index
-            ]
+            probabilities[0, self.default_class_index]
         )
 
         if not math.isfinite(score) or not 0 <= score <= 1:

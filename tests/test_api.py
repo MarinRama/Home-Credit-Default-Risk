@@ -121,7 +121,7 @@ def test_unexpected_top_level_field(client, valid_payload):
 def test_internal_error_is_controlled(client, valid_payload, monkeypatch):
     predictor = client.app.state.predictor
 
-    def failing_prediction(features):
+    def failing_prediction(features, timings=None):
         raise RuntimeError("Détail technique interne")
 
     monkeypatch.setattr(predictor, "predict", failing_prediction)

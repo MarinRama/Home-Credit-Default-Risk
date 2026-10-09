@@ -8,10 +8,20 @@ from src.api.main import app
 
 
 @pytest.fixture(scope="session")
-def client():
-    # Le contexte déclenche le démarrage et le chargement du modèle.
-    with TestClient(app) as test_client:
-        yield test_client
+def client(tmp_path_factory):
+    database_path = (
+        tmp_path_factory.mktemp("monitoring")
+        / "test_predictions.sqlite3"
+    )
+
+    with pytest.MonkeyPatch.context() as patch:
+        patch.setenv(
+            "MONITORING_DB_PATH",
+            str(database_path),
+        )
+
+        with TestClient(app) as test_client:
+            yield test_client
 
 
 @pytest.fixture
