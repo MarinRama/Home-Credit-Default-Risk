@@ -21,10 +21,10 @@ jobs:
 
     steps:
       - name: Recuperer le code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configurer Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -50,7 +50,7 @@ jobs:
 
       - name: Conserver les rapports de tests
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: test-reports
           path: |
@@ -89,7 +89,7 @@ jobs:
   deploy:
     name: Deployer et verifier
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
 
     steps:
@@ -102,7 +102,7 @@ jobs:
           python-version: "3.11"
 
       - name: Recuperer l'image construite
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: docker-image
 
