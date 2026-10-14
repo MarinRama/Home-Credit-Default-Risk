@@ -15,7 +15,7 @@ from pydantic import BaseModel, ConfigDict, Field
 from starlette.concurrency import run_in_threadpool
 
 from src.monitoring.storage import PredictionStore
-from src.scoring.predictor import CreditPredictor
+from src.scoring.predictor import CreditPredictor, InputValidationError
 
 
 logger = logging.getLogger(__name__)
@@ -232,22 +232,20 @@ def predict(payload: PredictionRequest, request: Request):
     predictor = get_predictor(request)
 
     try:
-        predictor.prepare_input(payload.features)
-    except ValueError as error:
-        request.state.error_type = "feature_validation_error"
-
-        raise HTTPException(
-            status_code=422,
-            detail=str(error),
-        ) from error
-
-    try:
         result = predictor.predict(
             payload.features,
             timings=request.state.timings,
         )
         request.state.outputs = result
         return result
+
+    except InputValidationError as error:
+        request.state.error_type = "feature_validation_error"
+
+        raise HTTPException(
+            status_code=422,
+            detail=str(error),
+        ) from error
 
     except Exception as error:
         request.state.error_type = "prediction_error"

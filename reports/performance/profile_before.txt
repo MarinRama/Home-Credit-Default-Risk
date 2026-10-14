@@ -1,0 +1,30 @@
+Profil du chemin de scoring actuel : 200 prédictions
+Chargement du modèle et échauffement exclus.
+         12983201 function calls (12523401 primitive calls) in 1.904 seconds
+
+   Ordered by: cumulative time
+   List reduced from 282 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      200    0.002    0.000    1.904    0.010 <string>:12(scoring_actuel)
+      400    0.080    0.000    1.679    0.004 predictor.py:82(prepare_input)
+      400    0.002    0.000    1.509    0.004 frame.py:698(__init__)
+      400    0.000    0.000    1.137    0.003 construction.py:96(arrays_to_mgr)
+      200    0.001    0.000    1.057    0.005 predictor.py:155(predict)
+      400    0.118    0.000    1.042    0.003 construction.py:596(_homogenize)
+   217400    0.288    0.000    0.745    0.000 construction.py:517(sanitize_array)
+  3264000    0.178    0.000    0.391    0.000 {built-in method builtins.isinstance}
+      400    0.001    0.000    0.347    0.001 construction.py:506(nested_data_to_arrays)
+      400    0.000    0.000    0.345    0.001 construction.py:793(to_arrays)
+      400    0.010    0.000    0.343    0.001 construction.py:928(_finalize_columns_and_data)
+      400    0.000    0.000    0.333    0.001 construction.py:1006(convert_object_array)
+      400    0.018    0.000    0.333    0.001 construction.py:1071(<listcomp>)
+   216400    0.177    0.000    0.314    0.000 construction.py:1028(convert)
+      200    0.001    0.000    0.222    0.001 sklearn.py:1615(predict_proba)
+      200    0.002    0.000    0.220    0.001 sklearn.py:1093(predict)
+   655000    0.071    0.000    0.162    0.000 generic.py:42(_instancecheck)
+      200    0.000    0.000    0.162    0.001 basic.py:4701(predict)
+      200    0.001    0.000    0.151    0.001 basic.py:1100(predict)
+   217400    0.046    0.000    0.151    0.000 construction.py:693(_sanitize_ndim)
+
+
