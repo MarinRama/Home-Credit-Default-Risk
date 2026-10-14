@@ -107,6 +107,7 @@ La latence client inclut l’aller-retour HTTP et la réception de la réponse.
 
 ## Déploiement
 
-La version optimisée fonctionne localement dans Docker.
-Sa validation et son déploiement simulé via GitHub Actions
-restent à confirmer après fusion dans main.
+La version optimisée fonctionne localement dans Docker et a été validée et déployée temporairement
+par GitHub Actions après fusion dans main. Les trois étapes
+du pipeline ont réussi : tests, construction Docker et vérification
+du déploiement.
