@@ -16,7 +16,7 @@ permissions:
 jobs:
   tests:
     name: Tests automatises
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
 
     steps:
@@ -62,12 +62,12 @@ jobs:
   build:
     name: Construire l'image Docker
     needs: tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
 
     steps:
       - name: Recuperer le code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Construire et identifier l'image
         run: |
@@ -80,7 +80,7 @@ jobs:
         run: docker save credit-scoring-api:local -o image.tar
 
       - name: Transmettre l'image au deploiement
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: docker-image
           path: image.tar
@@ -94,10 +94,10 @@ jobs:
 
     steps:
       - name: Recuperer le code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configurer Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -125,7 +125,7 @@ jobs:
 
       - name: Conserver les preuves du deploiement
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: deployment-reports
           path: reports/deployment/
