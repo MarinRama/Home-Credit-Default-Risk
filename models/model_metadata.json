@@ -1,0 +1,26 @@
+{
+  "model_version": "1.0.0",
+  "model_type": "LGBMClassifier",
+  "model_file": "final_credit_model.joblib",
+  "model_sha256": "b6e5715528e3132a6ea0099765941e1760cce69821d26fe86574e98dad298d6b",
+  "n_features": 541,
+  "classes": [
+    0,
+    1
+  ],
+  "decision_rule": "score >= threshold",
+  "threshold_config": {
+    "model_name": "LightGBM",
+    "optimal_threshold": 0.5000000000000001,
+    "false_negative_cost": 10,
+    "false_positive_cost": 1
+  },
+  "export_environment": {
+    "python": "3.9.6",
+    "lightgbm": "4.6.0",
+    "scikit-learn": "1.6.1",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "joblib": "1.5.3"
+  }
+}

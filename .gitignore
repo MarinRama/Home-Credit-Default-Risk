@@ -43,3 +43,28 @@ mlflow.db
 # macOS
 # ==========================
 .DS_Store
+
+# Données de monitoring et simulations
+data/reference/
+data/simulation/
+data/production/
+
+# Secrets locaux
+.env.*
+!.env.example
+
+# Couverture des tests
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Bases locales et fichiers associés
+*.sqlite
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Rapports générés par les vérifications automatisées
+reports/tests/
+reports/deployment/

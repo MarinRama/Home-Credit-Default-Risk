@@ -1,0 +1,15 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: credit-scoring-api:local
+    ports:
+      - "127.0.0.1:8001:8000"
+    environment:
+      MONITORING_DB_PATH: /app/data/production/predictions.sqlite3
+    volumes:
+      - production_data:/app/data/production
+
+volumes:
+  production_data:

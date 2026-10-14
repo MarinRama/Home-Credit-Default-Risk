@@ -1,0 +1,3255 @@
+{
+  "schema_version": "1.0.0",
+  "input_stage": "prepared_features",
+  "n_features": 541,
+  "feature_order": [
+    "NAME_CONTRACT_TYPE",
+    "FLAG_OWN_CAR",
+    "FLAG_OWN_REALTY",
+    "CNT_CHILDREN",
+    "AMT_INCOME_TOTAL",
+    "AMT_CREDIT",
+    "AMT_ANNUITY",
+    "AMT_GOODS_PRICE",
+    "REGION_POPULATION_RELATIVE",
+    "DAYS_BIRTH",
+    "DAYS_EMPLOYED",
+    "DAYS_REGISTRATION",
+    "DAYS_ID_PUBLISH",
+    "OWN_CAR_AGE",
+    "FLAG_MOBIL",
+    "FLAG_EMP_PHONE",
+    "FLAG_WORK_PHONE",
+    "FLAG_CONT_MOBILE",
+    "FLAG_PHONE",
+    "FLAG_EMAIL",
+    "CNT_FAM_MEMBERS",
+    "REGION_RATING_CLIENT",
+    "REGION_RATING_CLIENT_W_CITY",
+    "HOUR_APPR_PROCESS_START",
+    "REG_REGION_NOT_LIVE_REGION",
+    "REG_REGION_NOT_WORK_REGION",
+    "LIVE_REGION_NOT_WORK_REGION",
+    "REG_CITY_NOT_LIVE_CITY",
+    "REG_CITY_NOT_WORK_CITY",
+    "LIVE_CITY_NOT_WORK_CITY",
+    "EXT_SOURCE_1",
+    "EXT_SOURCE_2",
+    "EXT_SOURCE_3",
+    "APARTMENTS_AVG",
+    "BASEMENTAREA_AVG",
+    "YEARS_BEGINEXPLUATATION_AVG",
+    "YEARS_BUILD_AVG",
+    "COMMONAREA_AVG",
+    "ELEVATORS_AVG",
+    "ENTRANCES_AVG",
+    "FLOORSMAX_AVG",
+    "FLOORSMIN_AVG",
+    "LANDAREA_AVG",
+    "LIVINGAPARTMENTS_AVG",
+    "LIVINGAREA_AVG",
+    "NONLIVINGAPARTMENTS_AVG",
+    "NONLIVINGAREA_AVG",
+    "APARTMENTS_MODE",
+    "BASEMENTAREA_MODE",
+    "YEARS_BEGINEXPLUATATION_MODE",
+    "YEARS_BUILD_MODE",
+    "COMMONAREA_MODE",
+    "ELEVATORS_MODE",
+    "ENTRANCES_MODE",
+    "FLOORSMAX_MODE",
+    "FLOORSMIN_MODE",
+    "LANDAREA_MODE",
+    "LIVINGAPARTMENTS_MODE",
+    "LIVINGAREA_MODE",
+    "NONLIVINGAPARTMENTS_MODE",
+    "NONLIVINGAREA_MODE",
+    "APARTMENTS_MEDI",
+    "BASEMENTAREA_MEDI",
+    "YEARS_BEGINEXPLUATATION_MEDI",
+    "YEARS_BUILD_MEDI",
+    "COMMONAREA_MEDI",
+    "ELEVATORS_MEDI",
+    "ENTRANCES_MEDI",
+    "FLOORSMAX_MEDI",
+    "FLOORSMIN_MEDI",
+    "LANDAREA_MEDI",
+    "LIVINGAPARTMENTS_MEDI",
+    "LIVINGAREA_MEDI",
+    "NONLIVINGAPARTMENTS_MEDI",
+    "NONLIVINGAREA_MEDI",
+    "TOTALAREA_MODE",
+    "OBS_30_CNT_SOCIAL_CIRCLE",
+    "DEF_30_CNT_SOCIAL_CIRCLE",
+    "OBS_60_CNT_SOCIAL_CIRCLE",
+    "DEF_60_CNT_SOCIAL_CIRCLE",
+    "DAYS_LAST_PHONE_CHANGE",
+    "FLAG_DOCUMENT_2",
+    "FLAG_DOCUMENT_3",
+    "FLAG_DOCUMENT_4",
+    "FLAG_DOCUMENT_5",
+    "FLAG_DOCUMENT_6",
+    "FLAG_DOCUMENT_7",
+    "FLAG_DOCUMENT_8",
+    "FLAG_DOCUMENT_9",
+    "FLAG_DOCUMENT_10",
+    "FLAG_DOCUMENT_11",
+    "FLAG_DOCUMENT_12",
+    "FLAG_DOCUMENT_13",
+    "FLAG_DOCUMENT_14",
+    "FLAG_DOCUMENT_15",
+    "FLAG_DOCUMENT_16",
+    "FLAG_DOCUMENT_17",
+    "FLAG_DOCUMENT_18",
+    "FLAG_DOCUMENT_19",
+    "FLAG_DOCUMENT_20",
+    "FLAG_DOCUMENT_21",
+    "AMT_REQ_CREDIT_BUREAU_HOUR",
+    "AMT_REQ_CREDIT_BUREAU_DAY",
+    "AMT_REQ_CREDIT_BUREAU_WEEK",
+    "AMT_REQ_CREDIT_BUREAU_MON",
+    "AMT_REQ_CREDIT_BUREAU_QRT",
+    "AMT_REQ_CREDIT_BUREAU_YEAR",
+    "CODE_GENDER_F",
+    "CODE_GENDER_M",
+    "NAME_TYPE_SUITE_Children",
+    "NAME_TYPE_SUITE_Family",
+    "NAME_TYPE_SUITE_Group_of_people",
+    "NAME_TYPE_SUITE_Other_A",
+    "NAME_TYPE_SUITE_Other_B",
+    "NAME_TYPE_SUITE_Spouse_partner",
+    "NAME_TYPE_SUITE_Unaccompanied",
+    "NAME_INCOME_TYPE_Businessman",
+    "NAME_INCOME_TYPE_Commercial_associate",
+    "NAME_INCOME_TYPE_Pensioner",
+    "NAME_INCOME_TYPE_State_servant",
+    "NAME_INCOME_TYPE_Student",
+    "NAME_INCOME_TYPE_Unemployed",
+    "NAME_INCOME_TYPE_Working",
+    "NAME_EDUCATION_TYPE_Academic_degree",
+    "NAME_EDUCATION_TYPE_Higher_education",
+    "NAME_EDUCATION_TYPE_Incomplete_higher",
+    "NAME_EDUCATION_TYPE_Lower_secondary",
+    "NAME_EDUCATION_TYPE_Secondary_secondary_special",
+    "NAME_FAMILY_STATUS_Civil_marriage",
+    "NAME_FAMILY_STATUS_Married",
+    "NAME_FAMILY_STATUS_Separated",
+    "NAME_FAMILY_STATUS_Single_not_married",
+    "NAME_FAMILY_STATUS_Widow",
+    "NAME_HOUSING_TYPE_Co_op_apartment",
+    "NAME_HOUSING_TYPE_House_apartment",
+    "NAME_HOUSING_TYPE_Municipal_apartment",
+    "NAME_HOUSING_TYPE_Office_apartment",
+    "NAME_HOUSING_TYPE_Rented_apartment",
+    "NAME_HOUSING_TYPE_With_parents",
+    "OCCUPATION_TYPE_Accountants",
+    "OCCUPATION_TYPE_Cleaning_staff",
+    "OCCUPATION_TYPE_Cooking_staff",
+    "OCCUPATION_TYPE_Core_staff",
+    "OCCUPATION_TYPE_Drivers",
+    "OCCUPATION_TYPE_HR_staff",
+    "OCCUPATION_TYPE_High_skill_tech_staff",
+    "OCCUPATION_TYPE_IT_staff",
+    "OCCUPATION_TYPE_Laborers",
+    "OCCUPATION_TYPE_Low_skill_Laborers",
+    "OCCUPATION_TYPE_Managers",
+    "OCCUPATION_TYPE_Medicine_staff",
+    "OCCUPATION_TYPE_Private_service_staff",
+    "OCCUPATION_TYPE_Realty_agents",
+    "OCCUPATION_TYPE_Sales_staff",
+    "OCCUPATION_TYPE_Secretaries",
+    "OCCUPATION_TYPE_Security_staff",
+    "OCCUPATION_TYPE_Waiters_barmen_staff",
+    "WEEKDAY_APPR_PROCESS_START_FRIDAY",
+    "WEEKDAY_APPR_PROCESS_START_MONDAY",
+    "WEEKDAY_APPR_PROCESS_START_SATURDAY",
+    "WEEKDAY_APPR_PROCESS_START_SUNDAY",
+    "WEEKDAY_APPR_PROCESS_START_THURSDAY",
+    "WEEKDAY_APPR_PROCESS_START_TUESDAY",
+    "WEEKDAY_APPR_PROCESS_START_WEDNESDAY",
+    "ORGANIZATION_TYPE_Advertising",
+    "ORGANIZATION_TYPE_Agriculture",
+    "ORGANIZATION_TYPE_Bank",
+    "ORGANIZATION_TYPE_Business_Entity_Type_1",
+    "ORGANIZATION_TYPE_Business_Entity_Type_2",
+    "ORGANIZATION_TYPE_Business_Entity_Type_3",
+    "ORGANIZATION_TYPE_Cleaning",
+    "ORGANIZATION_TYPE_Construction",
+    "ORGANIZATION_TYPE_Culture",
+    "ORGANIZATION_TYPE_Electricity",
+    "ORGANIZATION_TYPE_Emergency",
+    "ORGANIZATION_TYPE_Government",
+    "ORGANIZATION_TYPE_Hotel",
+    "ORGANIZATION_TYPE_Housing",
+    "ORGANIZATION_TYPE_Industry_type_1",
+    "ORGANIZATION_TYPE_Industry_type_10",
+    "ORGANIZATION_TYPE_Industry_type_11",
+    "ORGANIZATION_TYPE_Industry_type_12",
+    "ORGANIZATION_TYPE_Industry_type_13",
+    "ORGANIZATION_TYPE_Industry_type_2",
+    "ORGANIZATION_TYPE_Industry_type_3",
+    "ORGANIZATION_TYPE_Industry_type_4",
+    "ORGANIZATION_TYPE_Industry_type_5",
+    "ORGANIZATION_TYPE_Industry_type_6",
+    "ORGANIZATION_TYPE_Industry_type_7",
+    "ORGANIZATION_TYPE_Industry_type_8",
+    "ORGANIZATION_TYPE_Industry_type_9",
+    "ORGANIZATION_TYPE_Insurance",
+    "ORGANIZATION_TYPE_Kindergarten",
+    "ORGANIZATION_TYPE_Legal_Services",
+    "ORGANIZATION_TYPE_Medicine",
+    "ORGANIZATION_TYPE_Military",
+    "ORGANIZATION_TYPE_Mobile",
+    "ORGANIZATION_TYPE_Other",
+    "ORGANIZATION_TYPE_Police",
+    "ORGANIZATION_TYPE_Postal",
+    "ORGANIZATION_TYPE_Realtor",
+    "ORGANIZATION_TYPE_Religion",
+    "ORGANIZATION_TYPE_Restaurant",
+    "ORGANIZATION_TYPE_School",
+    "ORGANIZATION_TYPE_Security",
+    "ORGANIZATION_TYPE_Security_Ministries",
+    "ORGANIZATION_TYPE_Self_employed",
+    "ORGANIZATION_TYPE_Services",
+    "ORGANIZATION_TYPE_Telecom",
+    "ORGANIZATION_TYPE_Trade_type_1",
+    "ORGANIZATION_TYPE_Trade_type_2",
+    "ORGANIZATION_TYPE_Trade_type_3",
+    "ORGANIZATION_TYPE_Trade_type_4",
+    "ORGANIZATION_TYPE_Trade_type_5",
+    "ORGANIZATION_TYPE_Trade_type_6",
+    "ORGANIZATION_TYPE_Trade_type_7",
+    "ORGANIZATION_TYPE_Transport_type_1",
+    "ORGANIZATION_TYPE_Transport_type_2",
+    "ORGANIZATION_TYPE_Transport_type_3",
+    "ORGANIZATION_TYPE_Transport_type_4",
+    "ORGANIZATION_TYPE_University",
+    "ORGANIZATION_TYPE_XNA",
+    "FONDKAPREMONT_MODE_not_specified",
+    "FONDKAPREMONT_MODE_org_spec_account",
+    "FONDKAPREMONT_MODE_reg_oper_account",
+    "FONDKAPREMONT_MODE_reg_oper_spec_account",
+    "HOUSETYPE_MODE_block_of_flats",
+    "HOUSETYPE_MODE_specific_housing",
+    "HOUSETYPE_MODE_terraced_house",
+    "WALLSMATERIAL_MODE_Block",
+    "WALLSMATERIAL_MODE_Mixed",
+    "WALLSMATERIAL_MODE_Monolithic",
+    "WALLSMATERIAL_MODE_Others",
+    "WALLSMATERIAL_MODE_Panel",
+    "WALLSMATERIAL_MODE_Stone_brick",
+    "WALLSMATERIAL_MODE_Wooden",
+    "EMERGENCYSTATE_MODE_No",
+    "EMERGENCYSTATE_MODE_Yes",
+    "AGE_YEARS",
+    "EMPLOYED_YEARS",
+    "REGISTRATION_YEARS",
+    "ID_PUBLISH_YEARS",
+    "CREDIT_INCOME_RATIO",
+    "ANNUITY_INCOME_RATIO",
+    "CREDIT_ANNUITY_RATIO",
+    "GOODS_CREDIT_RATIO",
+    "INCOME_PER_PERSON",
+    "ANNUITY_PER_PERSON",
+    "EMPLOYED_AGE_RATIO",
+    "CHILDREN_FAMILY_RATIO",
+    "EXT_SOURCE_MEAN",
+    "EXT_SOURCE_MIN",
+    "EXT_SOURCE_MAX",
+    "EXT_SOURCE_STD",
+    "DOCUMENT_COUNT",
+    "CONTACT_INFO_COUNT",
+    "BUREAU_SK_ID_BUREAU_COUNT",
+    "BUREAU_DAYS_CREDIT_MEAN",
+    "BUREAU_DAYS_CREDIT_MIN",
+    "BUREAU_DAYS_CREDIT_MAX",
+    "BUREAU_CREDIT_DAY_OVERDUE_MEAN",
+    "BUREAU_CREDIT_DAY_OVERDUE_MAX",
+    "BUREAU_DAYS_CREDIT_ENDDATE_MEAN",
+    "BUREAU_DAYS_CREDIT_ENDDATE_MIN",
+    "BUREAU_DAYS_CREDIT_ENDDATE_MAX",
+    "BUREAU_DAYS_ENDDATE_FACT_MEAN",
+    "BUREAU_DAYS_ENDDATE_FACT_MIN",
+    "BUREAU_DAYS_ENDDATE_FACT_MAX",
+    "BUREAU_AMT_CREDIT_MAX_OVERDUE_MEAN",
+    "BUREAU_AMT_CREDIT_MAX_OVERDUE_MAX",
+    "BUREAU_CNT_CREDIT_PROLONG_SUM",
+    "BUREAU_CNT_CREDIT_PROLONG_MEAN",
+    "BUREAU_AMT_CREDIT_SUM_SUM",
+    "BUREAU_AMT_CREDIT_SUM_MEAN",
+    "BUREAU_AMT_CREDIT_SUM_MAX",
+    "BUREAU_AMT_CREDIT_SUM_MIN",
+    "BUREAU_AMT_CREDIT_SUM_DEBT_SUM",
+    "BUREAU_AMT_CREDIT_SUM_DEBT_MEAN",
+    "BUREAU_AMT_CREDIT_SUM_DEBT_MAX",
+    "BUREAU_AMT_CREDIT_SUM_LIMIT_SUM",
+    "BUREAU_AMT_CREDIT_SUM_LIMIT_MEAN",
+    "BUREAU_AMT_CREDIT_SUM_OVERDUE_SUM",
+    "BUREAU_AMT_CREDIT_SUM_OVERDUE_MEAN",
+    "BUREAU_AMT_CREDIT_SUM_OVERDUE_MAX",
+    "BUREAU_AMT_ANNUITY_SUM",
+    "BUREAU_AMT_ANNUITY_MEAN",
+    "BUREAU_AMT_ANNUITY_MAX",
+    "BUREAU_BUREAU_IS_ACTIVE_SUM",
+    "BUREAU_BUREAU_IS_ACTIVE_MEAN",
+    "BUREAU_BUREAU_IS_CLOSED_SUM",
+    "BUREAU_BUREAU_IS_CLOSED_MEAN",
+    "BUREAU_BUREAU_HAS_OVERDUE_SUM",
+    "BUREAU_BUREAU_HAS_OVERDUE_MEAN",
+    "BUREAU_BUREAU_DEBT_CREDIT_RATIO_MEAN",
+    "BUREAU_BUREAU_DEBT_CREDIT_RATIO_MAX",
+    "BUREAU_BUREAU_OVERDUE_CREDIT_RATIO_MEAN",
+    "BUREAU_BUREAU_OVERDUE_CREDIT_RATIO_MAX",
+    "BUREAU_BB_MONTHS_COUNT_MEAN",
+    "BUREAU_BB_MONTHS_COUNT_MAX",
+    "BUREAU_BB_MONTHS_COUNT_SUM",
+    "BUREAU_BB_MONTHS_MIN_MEAN",
+    "BUREAU_BB_MONTHS_MIN_MAX",
+    "BUREAU_BB_MONTHS_MIN_SUM",
+    "BUREAU_BB_MONTHS_MAX_MEAN",
+    "BUREAU_BB_MONTHS_MAX_MAX",
+    "BUREAU_BB_MONTHS_MAX_SUM",
+    "BUREAU_BB_STATUS_0_COUNT_MEAN",
+    "BUREAU_BB_STATUS_0_COUNT_MAX",
+    "BUREAU_BB_STATUS_0_COUNT_SUM",
+    "BUREAU_BB_STATUS_1_COUNT_MEAN",
+    "BUREAU_BB_STATUS_1_COUNT_MAX",
+    "BUREAU_BB_STATUS_1_COUNT_SUM",
+    "BUREAU_BB_STATUS_2_COUNT_MEAN",
+    "BUREAU_BB_STATUS_2_COUNT_MAX",
+    "BUREAU_BB_STATUS_2_COUNT_SUM",
+    "BUREAU_BB_STATUS_3_COUNT_MEAN",
+    "BUREAU_BB_STATUS_3_COUNT_MAX",
+    "BUREAU_BB_STATUS_3_COUNT_SUM",
+    "BUREAU_BB_STATUS_4_COUNT_MEAN",
+    "BUREAU_BB_STATUS_4_COUNT_MAX",
+    "BUREAU_BB_STATUS_4_COUNT_SUM",
+    "BUREAU_BB_STATUS_5_COUNT_MEAN",
+    "BUREAU_BB_STATUS_5_COUNT_MAX",
+    "BUREAU_BB_STATUS_5_COUNT_SUM",
+    "BUREAU_BB_STATUS_C_COUNT_MEAN",
+    "BUREAU_BB_STATUS_C_COUNT_MAX",
+    "BUREAU_BB_STATUS_C_COUNT_SUM",
+    "BUREAU_BB_STATUS_X_COUNT_MEAN",
+    "BUREAU_BB_STATUS_X_COUNT_MAX",
+    "BUREAU_BB_STATUS_X_COUNT_SUM",
+    "BUREAU_BB_STATUS_0_RATIO_MEAN",
+    "BUREAU_BB_STATUS_0_RATIO_MAX",
+    "BUREAU_BB_STATUS_0_RATIO_SUM",
+    "BUREAU_BB_STATUS_1_RATIO_MEAN",
+    "BUREAU_BB_STATUS_1_RATIO_MAX",
+    "BUREAU_BB_STATUS_1_RATIO_SUM",
+    "BUREAU_BB_STATUS_2_RATIO_MEAN",
+    "BUREAU_BB_STATUS_2_RATIO_MAX",
+    "BUREAU_BB_STATUS_2_RATIO_SUM",
+    "BUREAU_BB_STATUS_3_RATIO_MEAN",
+    "BUREAU_BB_STATUS_3_RATIO_MAX",
+    "BUREAU_BB_STATUS_3_RATIO_SUM",
+    "BUREAU_BB_STATUS_4_RATIO_MEAN",
+    "BUREAU_BB_STATUS_4_RATIO_MAX",
+    "BUREAU_BB_STATUS_4_RATIO_SUM",
+    "BUREAU_BB_STATUS_5_RATIO_MEAN",
+    "BUREAU_BB_STATUS_5_RATIO_MAX",
+    "BUREAU_BB_STATUS_5_RATIO_SUM",
+    "BUREAU_BB_STATUS_C_RATIO_MEAN",
+    "BUREAU_BB_STATUS_C_RATIO_MAX",
+    "BUREAU_BB_STATUS_C_RATIO_SUM",
+    "BUREAU_BB_STATUS_X_RATIO_MEAN",
+    "BUREAU_BB_STATUS_X_RATIO_MAX",
+    "BUREAU_BB_STATUS_X_RATIO_SUM",
+    "PREV_SK_ID_PREV_COUNT",
+    "PREV_AMT_ANNUITY_MEAN",
+    "PREV_AMT_ANNUITY_MAX",
+    "PREV_AMT_ANNUITY_SUM",
+    "PREV_AMT_APPLICATION_MEAN",
+    "PREV_AMT_APPLICATION_MAX",
+    "PREV_AMT_APPLICATION_SUM",
+    "PREV_AMT_CREDIT_MEAN",
+    "PREV_AMT_CREDIT_MAX",
+    "PREV_AMT_CREDIT_SUM",
+    "PREV_AMT_DOWN_PAYMENT_MEAN",
+    "PREV_AMT_DOWN_PAYMENT_MAX",
+    "PREV_AMT_DOWN_PAYMENT_SUM",
+    "PREV_AMT_GOODS_PRICE_MEAN",
+    "PREV_AMT_GOODS_PRICE_MAX",
+    "PREV_HOUR_APPR_PROCESS_START_MEAN",
+    "PREV_RATE_DOWN_PAYMENT_MEAN",
+    "PREV_RATE_DOWN_PAYMENT_MAX",
+    "PREV_DAYS_DECISION_MEAN",
+    "PREV_DAYS_DECISION_MIN",
+    "PREV_DAYS_DECISION_MAX",
+    "PREV_CNT_PAYMENT_MEAN",
+    "PREV_CNT_PAYMENT_MAX",
+    "PREV_CNT_PAYMENT_SUM",
+    "PREV_PREV_IS_APPROVED_SUM",
+    "PREV_PREV_IS_APPROVED_MEAN",
+    "PREV_PREV_IS_REFUSED_SUM",
+    "PREV_PREV_IS_REFUSED_MEAN",
+    "PREV_PREV_IS_CANCELED_SUM",
+    "PREV_PREV_IS_CANCELED_MEAN",
+    "PREV_PREV_CREDIT_APPLICATION_RATIO_MEAN",
+    "PREV_PREV_CREDIT_APPLICATION_RATIO_MAX",
+    "PREV_PREV_DOWN_PAYMENT_RATIO_MEAN",
+    "PREV_PREV_DOWN_PAYMENT_RATIO_MAX",
+    "PREV_PREV_ANNUITY_CREDIT_RATIO_MEAN",
+    "PREV_PREV_ANNUITY_CREDIT_RATIO_MAX",
+    "INST_SK_ID_PREV_NUNIQUE",
+    "INST_NUM_INSTALMENT_VERSION_NUNIQUE",
+    "INST_NUM_INSTALMENT_VERSION_MEAN",
+    "INST_NUM_INSTALMENT_NUMBER_MAX",
+    "INST_NUM_INSTALMENT_NUMBER_COUNT",
+    "INST_DAYS_INSTALMENT_MEAN",
+    "INST_DAYS_INSTALMENT_MIN",
+    "INST_DAYS_INSTALMENT_MAX",
+    "INST_DAYS_ENTRY_PAYMENT_MEAN",
+    "INST_DAYS_ENTRY_PAYMENT_MIN",
+    "INST_DAYS_ENTRY_PAYMENT_MAX",
+    "INST_AMT_INSTALMENT_SUM",
+    "INST_AMT_INSTALMENT_MEAN",
+    "INST_AMT_INSTALMENT_MAX",
+    "INST_AMT_PAYMENT_SUM",
+    "INST_AMT_PAYMENT_MEAN",
+    "INST_AMT_PAYMENT_MAX",
+    "INST_INSTALLMENT_DELAY_DAYS_MEAN",
+    "INST_INSTALLMENT_DELAY_DAYS_MAX",
+    "INST_INSTALLMENT_DELAY_DAYS_SUM",
+    "INST_INSTALLMENT_LATE_SUM",
+    "INST_INSTALLMENT_LATE_MEAN",
+    "INST_INSTALLMENT_EARLY_SUM",
+    "INST_INSTALLMENT_EARLY_MEAN",
+    "INST_INSTALLMENT_PAYMENT_DIFFERENCE_MEAN",
+    "INST_INSTALLMENT_PAYMENT_DIFFERENCE_MAX",
+    "INST_INSTALLMENT_PAYMENT_DIFFERENCE_SUM",
+    "INST_INSTALLMENT_UNDERPAID_SUM",
+    "INST_INSTALLMENT_UNDERPAID_MEAN",
+    "INST_INSTALLMENT_PAYMENT_RATIO_MEAN",
+    "INST_INSTALLMENT_PAYMENT_RATIO_MIN",
+    "INST_INSTALLMENT_PAYMENT_RATIO_MAX",
+    "POS_SK_ID_PREV_NUNIQUE",
+    "POS_MONTHS_BALANCE_COUNT",
+    "POS_MONTHS_BALANCE_MEAN",
+    "POS_MONTHS_BALANCE_MIN",
+    "POS_MONTHS_BALANCE_MAX",
+    "POS_CNT_INSTALMENT_MEAN",
+    "POS_CNT_INSTALMENT_MAX",
+    "POS_CNT_INSTALMENT_SUM",
+    "POS_CNT_INSTALMENT_FUTURE_MEAN",
+    "POS_CNT_INSTALMENT_FUTURE_MAX",
+    "POS_CNT_INSTALMENT_FUTURE_SUM",
+    "POS_SK_DPD_MEAN",
+    "POS_SK_DPD_MAX",
+    "POS_SK_DPD_SUM",
+    "POS_SK_DPD_DEF_MEAN",
+    "POS_SK_DPD_DEF_MAX",
+    "POS_SK_DPD_DEF_SUM",
+    "POS_POS_HAS_DPD_SUM",
+    "POS_POS_HAS_DPD_MEAN",
+    "POS_POS_HAS_DPD_DEF_SUM",
+    "POS_POS_HAS_DPD_DEF_MEAN",
+    "CC_MONTHS_BALANCE_MEAN",
+    "CC_MONTHS_BALANCE_MAX",
+    "CC_MONTHS_BALANCE_MIN",
+    "CC_MONTHS_BALANCE_SUM",
+    "CC_AMT_BALANCE_MEAN",
+    "CC_AMT_BALANCE_MAX",
+    "CC_AMT_BALANCE_MIN",
+    "CC_AMT_BALANCE_SUM",
+    "CC_AMT_CREDIT_LIMIT_ACTUAL_MEAN",
+    "CC_AMT_CREDIT_LIMIT_ACTUAL_MAX",
+    "CC_AMT_CREDIT_LIMIT_ACTUAL_MIN",
+    "CC_AMT_CREDIT_LIMIT_ACTUAL_SUM",
+    "CC_AMT_DRAWINGS_ATM_CURRENT_MEAN",
+    "CC_AMT_DRAWINGS_ATM_CURRENT_MAX",
+    "CC_AMT_DRAWINGS_ATM_CURRENT_MIN",
+    "CC_AMT_DRAWINGS_ATM_CURRENT_SUM",
+    "CC_AMT_DRAWINGS_CURRENT_MEAN",
+    "CC_AMT_DRAWINGS_CURRENT_MAX",
+    "CC_AMT_DRAWINGS_CURRENT_MIN",
+    "CC_AMT_DRAWINGS_CURRENT_SUM",
+    "CC_AMT_DRAWINGS_OTHER_CURRENT_MEAN",
+    "CC_AMT_DRAWINGS_OTHER_CURRENT_MAX",
+    "CC_AMT_DRAWINGS_OTHER_CURRENT_MIN",
+    "CC_AMT_DRAWINGS_OTHER_CURRENT_SUM",
+    "CC_AMT_DRAWINGS_POS_CURRENT_MEAN",
+    "CC_AMT_DRAWINGS_POS_CURRENT_MAX",
+    "CC_AMT_DRAWINGS_POS_CURRENT_MIN",
+    "CC_AMT_DRAWINGS_POS_CURRENT_SUM",
+    "CC_AMT_INST_MIN_REGULARITY_MEAN",
+    "CC_AMT_INST_MIN_REGULARITY_MAX",
+    "CC_AMT_INST_MIN_REGULARITY_MIN",
+    "CC_AMT_INST_MIN_REGULARITY_SUM",
+    "CC_AMT_PAYMENT_CURRENT_MEAN",
+    "CC_AMT_PAYMENT_CURRENT_MAX",
+    "CC_AMT_PAYMENT_CURRENT_MIN",
+    "CC_AMT_PAYMENT_CURRENT_SUM",
+    "CC_AMT_PAYMENT_TOTAL_CURRENT_MEAN",
+    "CC_AMT_PAYMENT_TOTAL_CURRENT_MAX",
+    "CC_AMT_PAYMENT_TOTAL_CURRENT_MIN",
+    "CC_AMT_PAYMENT_TOTAL_CURRENT_SUM",
+    "CC_AMT_RECEIVABLE_PRINCIPAL_MEAN",
+    "CC_AMT_RECEIVABLE_PRINCIPAL_MAX",
+    "CC_AMT_RECEIVABLE_PRINCIPAL_MIN",
+    "CC_AMT_RECEIVABLE_PRINCIPAL_SUM",
+    "CC_AMT_RECIVABLE_MEAN",
+    "CC_AMT_RECIVABLE_MAX",
+    "CC_AMT_RECIVABLE_MIN",
+    "CC_AMT_RECIVABLE_SUM",
+    "CC_AMT_TOTAL_RECEIVABLE_MEAN",
+    "CC_AMT_TOTAL_RECEIVABLE_MAX",
+    "CC_AMT_TOTAL_RECEIVABLE_MIN",
+    "CC_AMT_TOTAL_RECEIVABLE_SUM",
+    "CC_CNT_DRAWINGS_ATM_CURRENT_MEAN",
+    "CC_CNT_DRAWINGS_ATM_CURRENT_MAX",
+    "CC_CNT_DRAWINGS_ATM_CURRENT_MIN",
+    "CC_CNT_DRAWINGS_ATM_CURRENT_SUM",
+    "CC_CNT_DRAWINGS_CURRENT_MEAN",
+    "CC_CNT_DRAWINGS_CURRENT_MAX",
+    "CC_CNT_DRAWINGS_CURRENT_MIN",
+    "CC_CNT_DRAWINGS_CURRENT_SUM",
+    "CC_CNT_DRAWINGS_OTHER_CURRENT_MEAN",
+    "CC_CNT_DRAWINGS_OTHER_CURRENT_MAX",
+    "CC_CNT_DRAWINGS_OTHER_CURRENT_MIN",
+    "CC_CNT_DRAWINGS_OTHER_CURRENT_SUM",
+    "CC_CNT_DRAWINGS_POS_CURRENT_MEAN",
+    "CC_CNT_DRAWINGS_POS_CURRENT_MAX",
+    "CC_CNT_DRAWINGS_POS_CURRENT_MIN",
+    "CC_CNT_DRAWINGS_POS_CURRENT_SUM",
+    "CC_CNT_INSTALMENT_MATURE_CUM_MEAN",
+    "CC_CNT_INSTALMENT_MATURE_CUM_MAX",
+    "CC_CNT_INSTALMENT_MATURE_CUM_MIN",
+    "CC_CNT_INSTALMENT_MATURE_CUM_SUM",
+    "CC_SK_DPD_MEAN",
+    "CC_SK_DPD_MAX",
+    "CC_SK_DPD_MIN",
+    "CC_SK_DPD_SUM",
+    "CC_SK_DPD_DEF_MEAN",
+    "CC_SK_DPD_DEF_MAX",
+    "CC_SK_DPD_DEF_SUM",
+    "CC_CC_UTILIZATION_RATIO_MEAN",
+    "CC_CC_UTILIZATION_RATIO_MAX",
+    "CC_CC_UTILIZATION_RATIO_MIN",
+    "CC_CC_UTILIZATION_RATIO_SUM",
+    "CC_CC_DRAWINGS_RATIO_MEAN",
+    "CC_CC_DRAWINGS_RATIO_MAX",
+    "CC_CC_DRAWINGS_RATIO_MIN",
+    "CC_CC_DRAWINGS_RATIO_SUM",
+    "CC_CC_PAYMENT_MIN_RATIO_MEAN",
+    "CC_CC_PAYMENT_MIN_RATIO_MAX",
+    "CC_CC_PAYMENT_MIN_RATIO_MIN",
+    "CC_CC_PAYMENT_MIN_RATIO_SUM",
+    "CC_CC_HAS_DPD_MEAN",
+    "CC_CC_HAS_DPD_MAX",
+    "CC_CC_HAS_DPD_SUM",
+    "CC_CC_HAS_DPD_DEF_MEAN",
+    "CC_CC_HAS_DPD_DEF_MAX",
+    "CC_CC_HAS_DPD_DEF_SUM",
+    "CC_SK_ID_PREV_NUNIQUE"
+  ],
+  "features": [
+    {
+      "name": "NAME_CONTRACT_TYPE",
+      "original_name": "NAME_CONTRACT_TYPE",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_OWN_CAR",
+      "original_name": "FLAG_OWN_CAR",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_OWN_REALTY",
+      "original_name": "FLAG_OWN_REALTY",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "CNT_CHILDREN",
+      "original_name": "CNT_CHILDREN",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "AMT_INCOME_TOTAL",
+      "original_name": "AMT_INCOME_TOTAL",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "AMT_CREDIT",
+      "original_name": "AMT_CREDIT",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "AMT_ANNUITY",
+      "original_name": "AMT_ANNUITY",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "AMT_GOODS_PRICE",
+      "original_name": "AMT_GOODS_PRICE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "REGION_POPULATION_RELATIVE",
+      "original_name": "REGION_POPULATION_RELATIVE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "DAYS_BIRTH",
+      "original_name": "DAYS_BIRTH",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "DAYS_EMPLOYED",
+      "original_name": "DAYS_EMPLOYED",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "DAYS_REGISTRATION",
+      "original_name": "DAYS_REGISTRATION",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "DAYS_ID_PUBLISH",
+      "original_name": "DAYS_ID_PUBLISH",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "OWN_CAR_AGE",
+      "original_name": "OWN_CAR_AGE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "FLAG_MOBIL",
+      "original_name": "FLAG_MOBIL",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_EMP_PHONE",
+      "original_name": "FLAG_EMP_PHONE",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_WORK_PHONE",
+      "original_name": "FLAG_WORK_PHONE",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_CONT_MOBILE",
+      "original_name": "FLAG_CONT_MOBILE",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_PHONE",
+      "original_name": "FLAG_PHONE",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_EMAIL",
+      "original_name": "FLAG_EMAIL",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "CNT_FAM_MEMBERS",
+      "original_name": "CNT_FAM_MEMBERS",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "REGION_RATING_CLIENT",
+      "original_name": "REGION_RATING_CLIENT",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "REGION_RATING_CLIENT_W_CITY",
+      "original_name": "REGION_RATING_CLIENT_W_CITY",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "HOUR_APPR_PROCESS_START",
+      "original_name": "HOUR_APPR_PROCESS_START",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "REG_REGION_NOT_LIVE_REGION",
+      "original_name": "REG_REGION_NOT_LIVE_REGION",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "REG_REGION_NOT_WORK_REGION",
+      "original_name": "REG_REGION_NOT_WORK_REGION",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "LIVE_REGION_NOT_WORK_REGION",
+      "original_name": "LIVE_REGION_NOT_WORK_REGION",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "REG_CITY_NOT_LIVE_CITY",
+      "original_name": "REG_CITY_NOT_LIVE_CITY",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "REG_CITY_NOT_WORK_CITY",
+      "original_name": "REG_CITY_NOT_WORK_CITY",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "LIVE_CITY_NOT_WORK_CITY",
+      "original_name": "LIVE_CITY_NOT_WORK_CITY",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "EXT_SOURCE_1",
+      "original_name": "EXT_SOURCE_1",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "EXT_SOURCE_2",
+      "original_name": "EXT_SOURCE_2",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "EXT_SOURCE_3",
+      "original_name": "EXT_SOURCE_3",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "APARTMENTS_AVG",
+      "original_name": "APARTMENTS_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BASEMENTAREA_AVG",
+      "original_name": "BASEMENTAREA_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "YEARS_BEGINEXPLUATATION_AVG",
+      "original_name": "YEARS_BEGINEXPLUATATION_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "YEARS_BUILD_AVG",
+      "original_name": "YEARS_BUILD_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "COMMONAREA_AVG",
+      "original_name": "COMMONAREA_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "ELEVATORS_AVG",
+      "original_name": "ELEVATORS_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "ENTRANCES_AVG",
+      "original_name": "ENTRANCES_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "FLOORSMAX_AVG",
+      "original_name": "FLOORSMAX_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "FLOORSMIN_AVG",
+      "original_name": "FLOORSMIN_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "LANDAREA_AVG",
+      "original_name": "LANDAREA_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "LIVINGAPARTMENTS_AVG",
+      "original_name": "LIVINGAPARTMENTS_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "LIVINGAREA_AVG",
+      "original_name": "LIVINGAREA_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "NONLIVINGAPARTMENTS_AVG",
+      "original_name": "NONLIVINGAPARTMENTS_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "NONLIVINGAREA_AVG",
+      "original_name": "NONLIVINGAREA_AVG",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "APARTMENTS_MODE",
+      "original_name": "APARTMENTS_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BASEMENTAREA_MODE",
+      "original_name": "BASEMENTAREA_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "YEARS_BEGINEXPLUATATION_MODE",
+      "original_name": "YEARS_BEGINEXPLUATATION_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "YEARS_BUILD_MODE",
+      "original_name": "YEARS_BUILD_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "COMMONAREA_MODE",
+      "original_name": "COMMONAREA_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "ELEVATORS_MODE",
+      "original_name": "ELEVATORS_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "ENTRANCES_MODE",
+      "original_name": "ENTRANCES_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "FLOORSMAX_MODE",
+      "original_name": "FLOORSMAX_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "FLOORSMIN_MODE",
+      "original_name": "FLOORSMIN_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "LANDAREA_MODE",
+      "original_name": "LANDAREA_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "LIVINGAPARTMENTS_MODE",
+      "original_name": "LIVINGAPARTMENTS_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "LIVINGAREA_MODE",
+      "original_name": "LIVINGAREA_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "NONLIVINGAPARTMENTS_MODE",
+      "original_name": "NONLIVINGAPARTMENTS_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "NONLIVINGAREA_MODE",
+      "original_name": "NONLIVINGAREA_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "APARTMENTS_MEDI",
+      "original_name": "APARTMENTS_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BASEMENTAREA_MEDI",
+      "original_name": "BASEMENTAREA_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "YEARS_BEGINEXPLUATATION_MEDI",
+      "original_name": "YEARS_BEGINEXPLUATATION_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "YEARS_BUILD_MEDI",
+      "original_name": "YEARS_BUILD_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "COMMONAREA_MEDI",
+      "original_name": "COMMONAREA_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "ELEVATORS_MEDI",
+      "original_name": "ELEVATORS_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "ENTRANCES_MEDI",
+      "original_name": "ENTRANCES_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "FLOORSMAX_MEDI",
+      "original_name": "FLOORSMAX_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "FLOORSMIN_MEDI",
+      "original_name": "FLOORSMIN_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "LANDAREA_MEDI",
+      "original_name": "LANDAREA_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "LIVINGAPARTMENTS_MEDI",
+      "original_name": "LIVINGAPARTMENTS_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "LIVINGAREA_MEDI",
+      "original_name": "LIVINGAREA_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "NONLIVINGAPARTMENTS_MEDI",
+      "original_name": "NONLIVINGAPARTMENTS_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "NONLIVINGAREA_MEDI",
+      "original_name": "NONLIVINGAREA_MEDI",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "TOTALAREA_MODE",
+      "original_name": "TOTALAREA_MODE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "OBS_30_CNT_SOCIAL_CIRCLE",
+      "original_name": "OBS_30_CNT_SOCIAL_CIRCLE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "DEF_30_CNT_SOCIAL_CIRCLE",
+      "original_name": "DEF_30_CNT_SOCIAL_CIRCLE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "OBS_60_CNT_SOCIAL_CIRCLE",
+      "original_name": "OBS_60_CNT_SOCIAL_CIRCLE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "DEF_60_CNT_SOCIAL_CIRCLE",
+      "original_name": "DEF_60_CNT_SOCIAL_CIRCLE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "DAYS_LAST_PHONE_CHANGE",
+      "original_name": "DAYS_LAST_PHONE_CHANGE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_2",
+      "original_name": "FLAG_DOCUMENT_2",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_3",
+      "original_name": "FLAG_DOCUMENT_3",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_4",
+      "original_name": "FLAG_DOCUMENT_4",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_5",
+      "original_name": "FLAG_DOCUMENT_5",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_6",
+      "original_name": "FLAG_DOCUMENT_6",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_7",
+      "original_name": "FLAG_DOCUMENT_7",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_8",
+      "original_name": "FLAG_DOCUMENT_8",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_9",
+      "original_name": "FLAG_DOCUMENT_9",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_10",
+      "original_name": "FLAG_DOCUMENT_10",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_11",
+      "original_name": "FLAG_DOCUMENT_11",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_12",
+      "original_name": "FLAG_DOCUMENT_12",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_13",
+      "original_name": "FLAG_DOCUMENT_13",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_14",
+      "original_name": "FLAG_DOCUMENT_14",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_15",
+      "original_name": "FLAG_DOCUMENT_15",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_16",
+      "original_name": "FLAG_DOCUMENT_16",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_17",
+      "original_name": "FLAG_DOCUMENT_17",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_18",
+      "original_name": "FLAG_DOCUMENT_18",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_19",
+      "original_name": "FLAG_DOCUMENT_19",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_20",
+      "original_name": "FLAG_DOCUMENT_20",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "FLAG_DOCUMENT_21",
+      "original_name": "FLAG_DOCUMENT_21",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_HOUR",
+      "original_name": "AMT_REQ_CREDIT_BUREAU_HOUR",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_DAY",
+      "original_name": "AMT_REQ_CREDIT_BUREAU_DAY",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_WEEK",
+      "original_name": "AMT_REQ_CREDIT_BUREAU_WEEK",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_MON",
+      "original_name": "AMT_REQ_CREDIT_BUREAU_MON",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_QRT",
+      "original_name": "AMT_REQ_CREDIT_BUREAU_QRT",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_YEAR",
+      "original_name": "AMT_REQ_CREDIT_BUREAU_YEAR",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CODE_GENDER_F",
+      "original_name": "CODE_GENDER_F",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "CODE_GENDER_M",
+      "original_name": "CODE_GENDER_M",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_TYPE_SUITE_Children",
+      "original_name": "NAME_TYPE_SUITE_Children",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_TYPE_SUITE_Family",
+      "original_name": "NAME_TYPE_SUITE_Family",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_TYPE_SUITE_Group_of_people",
+      "original_name": "NAME_TYPE_SUITE_Group of people",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_TYPE_SUITE_Other_A",
+      "original_name": "NAME_TYPE_SUITE_Other_A",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_TYPE_SUITE_Other_B",
+      "original_name": "NAME_TYPE_SUITE_Other_B",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_TYPE_SUITE_Spouse_partner",
+      "original_name": "NAME_TYPE_SUITE_Spouse, partner",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_TYPE_SUITE_Unaccompanied",
+      "original_name": "NAME_TYPE_SUITE_Unaccompanied",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_INCOME_TYPE_Businessman",
+      "original_name": "NAME_INCOME_TYPE_Businessman",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_INCOME_TYPE_Commercial_associate",
+      "original_name": "NAME_INCOME_TYPE_Commercial associate",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_INCOME_TYPE_Pensioner",
+      "original_name": "NAME_INCOME_TYPE_Pensioner",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_INCOME_TYPE_State_servant",
+      "original_name": "NAME_INCOME_TYPE_State servant",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_INCOME_TYPE_Student",
+      "original_name": "NAME_INCOME_TYPE_Student",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_INCOME_TYPE_Unemployed",
+      "original_name": "NAME_INCOME_TYPE_Unemployed",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_INCOME_TYPE_Working",
+      "original_name": "NAME_INCOME_TYPE_Working",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_EDUCATION_TYPE_Academic_degree",
+      "original_name": "NAME_EDUCATION_TYPE_Academic degree",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_EDUCATION_TYPE_Higher_education",
+      "original_name": "NAME_EDUCATION_TYPE_Higher education",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_EDUCATION_TYPE_Incomplete_higher",
+      "original_name": "NAME_EDUCATION_TYPE_Incomplete higher",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_EDUCATION_TYPE_Lower_secondary",
+      "original_name": "NAME_EDUCATION_TYPE_Lower secondary",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_EDUCATION_TYPE_Secondary_secondary_special",
+      "original_name": "NAME_EDUCATION_TYPE_Secondary / secondary special",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_FAMILY_STATUS_Civil_marriage",
+      "original_name": "NAME_FAMILY_STATUS_Civil marriage",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_FAMILY_STATUS_Married",
+      "original_name": "NAME_FAMILY_STATUS_Married",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_FAMILY_STATUS_Separated",
+      "original_name": "NAME_FAMILY_STATUS_Separated",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_FAMILY_STATUS_Single_not_married",
+      "original_name": "NAME_FAMILY_STATUS_Single / not married",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_FAMILY_STATUS_Widow",
+      "original_name": "NAME_FAMILY_STATUS_Widow",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_HOUSING_TYPE_Co_op_apartment",
+      "original_name": "NAME_HOUSING_TYPE_Co-op apartment",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_HOUSING_TYPE_House_apartment",
+      "original_name": "NAME_HOUSING_TYPE_House / apartment",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_HOUSING_TYPE_Municipal_apartment",
+      "original_name": "NAME_HOUSING_TYPE_Municipal apartment",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_HOUSING_TYPE_Office_apartment",
+      "original_name": "NAME_HOUSING_TYPE_Office apartment",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_HOUSING_TYPE_Rented_apartment",
+      "original_name": "NAME_HOUSING_TYPE_Rented apartment",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "NAME_HOUSING_TYPE_With_parents",
+      "original_name": "NAME_HOUSING_TYPE_With parents",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Accountants",
+      "original_name": "OCCUPATION_TYPE_Accountants",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Cleaning_staff",
+      "original_name": "OCCUPATION_TYPE_Cleaning staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Cooking_staff",
+      "original_name": "OCCUPATION_TYPE_Cooking staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Core_staff",
+      "original_name": "OCCUPATION_TYPE_Core staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Drivers",
+      "original_name": "OCCUPATION_TYPE_Drivers",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_HR_staff",
+      "original_name": "OCCUPATION_TYPE_HR staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_High_skill_tech_staff",
+      "original_name": "OCCUPATION_TYPE_High skill tech staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_IT_staff",
+      "original_name": "OCCUPATION_TYPE_IT staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Laborers",
+      "original_name": "OCCUPATION_TYPE_Laborers",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Low_skill_Laborers",
+      "original_name": "OCCUPATION_TYPE_Low-skill Laborers",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Managers",
+      "original_name": "OCCUPATION_TYPE_Managers",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Medicine_staff",
+      "original_name": "OCCUPATION_TYPE_Medicine staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Private_service_staff",
+      "original_name": "OCCUPATION_TYPE_Private service staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Realty_agents",
+      "original_name": "OCCUPATION_TYPE_Realty agents",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Sales_staff",
+      "original_name": "OCCUPATION_TYPE_Sales staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Secretaries",
+      "original_name": "OCCUPATION_TYPE_Secretaries",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Security_staff",
+      "original_name": "OCCUPATION_TYPE_Security staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "OCCUPATION_TYPE_Waiters_barmen_staff",
+      "original_name": "OCCUPATION_TYPE_Waiters/barmen staff",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WEEKDAY_APPR_PROCESS_START_FRIDAY",
+      "original_name": "WEEKDAY_APPR_PROCESS_START_FRIDAY",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WEEKDAY_APPR_PROCESS_START_MONDAY",
+      "original_name": "WEEKDAY_APPR_PROCESS_START_MONDAY",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WEEKDAY_APPR_PROCESS_START_SATURDAY",
+      "original_name": "WEEKDAY_APPR_PROCESS_START_SATURDAY",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WEEKDAY_APPR_PROCESS_START_SUNDAY",
+      "original_name": "WEEKDAY_APPR_PROCESS_START_SUNDAY",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WEEKDAY_APPR_PROCESS_START_THURSDAY",
+      "original_name": "WEEKDAY_APPR_PROCESS_START_THURSDAY",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WEEKDAY_APPR_PROCESS_START_TUESDAY",
+      "original_name": "WEEKDAY_APPR_PROCESS_START_TUESDAY",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WEEKDAY_APPR_PROCESS_START_WEDNESDAY",
+      "original_name": "WEEKDAY_APPR_PROCESS_START_WEDNESDAY",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Advertising",
+      "original_name": "ORGANIZATION_TYPE_Advertising",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Agriculture",
+      "original_name": "ORGANIZATION_TYPE_Agriculture",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Bank",
+      "original_name": "ORGANIZATION_TYPE_Bank",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Business_Entity_Type_1",
+      "original_name": "ORGANIZATION_TYPE_Business Entity Type 1",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Business_Entity_Type_2",
+      "original_name": "ORGANIZATION_TYPE_Business Entity Type 2",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Business_Entity_Type_3",
+      "original_name": "ORGANIZATION_TYPE_Business Entity Type 3",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Cleaning",
+      "original_name": "ORGANIZATION_TYPE_Cleaning",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Construction",
+      "original_name": "ORGANIZATION_TYPE_Construction",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Culture",
+      "original_name": "ORGANIZATION_TYPE_Culture",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Electricity",
+      "original_name": "ORGANIZATION_TYPE_Electricity",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Emergency",
+      "original_name": "ORGANIZATION_TYPE_Emergency",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Government",
+      "original_name": "ORGANIZATION_TYPE_Government",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Hotel",
+      "original_name": "ORGANIZATION_TYPE_Hotel",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Housing",
+      "original_name": "ORGANIZATION_TYPE_Housing",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_1",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 1",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_10",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 10",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_11",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 11",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_12",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 12",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_13",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 13",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_2",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 2",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_3",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 3",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_4",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 4",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_5",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 5",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_6",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 6",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_7",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 7",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_8",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 8",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Industry_type_9",
+      "original_name": "ORGANIZATION_TYPE_Industry: type 9",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Insurance",
+      "original_name": "ORGANIZATION_TYPE_Insurance",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Kindergarten",
+      "original_name": "ORGANIZATION_TYPE_Kindergarten",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Legal_Services",
+      "original_name": "ORGANIZATION_TYPE_Legal Services",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Medicine",
+      "original_name": "ORGANIZATION_TYPE_Medicine",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Military",
+      "original_name": "ORGANIZATION_TYPE_Military",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Mobile",
+      "original_name": "ORGANIZATION_TYPE_Mobile",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Other",
+      "original_name": "ORGANIZATION_TYPE_Other",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Police",
+      "original_name": "ORGANIZATION_TYPE_Police",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Postal",
+      "original_name": "ORGANIZATION_TYPE_Postal",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Realtor",
+      "original_name": "ORGANIZATION_TYPE_Realtor",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Religion",
+      "original_name": "ORGANIZATION_TYPE_Religion",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Restaurant",
+      "original_name": "ORGANIZATION_TYPE_Restaurant",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_School",
+      "original_name": "ORGANIZATION_TYPE_School",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Security",
+      "original_name": "ORGANIZATION_TYPE_Security",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Security_Ministries",
+      "original_name": "ORGANIZATION_TYPE_Security Ministries",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Self_employed",
+      "original_name": "ORGANIZATION_TYPE_Self-employed",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Services",
+      "original_name": "ORGANIZATION_TYPE_Services",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Telecom",
+      "original_name": "ORGANIZATION_TYPE_Telecom",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Trade_type_1",
+      "original_name": "ORGANIZATION_TYPE_Trade: type 1",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Trade_type_2",
+      "original_name": "ORGANIZATION_TYPE_Trade: type 2",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Trade_type_3",
+      "original_name": "ORGANIZATION_TYPE_Trade: type 3",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Trade_type_4",
+      "original_name": "ORGANIZATION_TYPE_Trade: type 4",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Trade_type_5",
+      "original_name": "ORGANIZATION_TYPE_Trade: type 5",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Trade_type_6",
+      "original_name": "ORGANIZATION_TYPE_Trade: type 6",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Trade_type_7",
+      "original_name": "ORGANIZATION_TYPE_Trade: type 7",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Transport_type_1",
+      "original_name": "ORGANIZATION_TYPE_Transport: type 1",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Transport_type_2",
+      "original_name": "ORGANIZATION_TYPE_Transport: type 2",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Transport_type_3",
+      "original_name": "ORGANIZATION_TYPE_Transport: type 3",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_Transport_type_4",
+      "original_name": "ORGANIZATION_TYPE_Transport: type 4",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_University",
+      "original_name": "ORGANIZATION_TYPE_University",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "ORGANIZATION_TYPE_XNA",
+      "original_name": "ORGANIZATION_TYPE_XNA",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "FONDKAPREMONT_MODE_not_specified",
+      "original_name": "FONDKAPREMONT_MODE_not specified",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "FONDKAPREMONT_MODE_org_spec_account",
+      "original_name": "FONDKAPREMONT_MODE_org spec account",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "FONDKAPREMONT_MODE_reg_oper_account",
+      "original_name": "FONDKAPREMONT_MODE_reg oper account",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "FONDKAPREMONT_MODE_reg_oper_spec_account",
+      "original_name": "FONDKAPREMONT_MODE_reg oper spec account",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "HOUSETYPE_MODE_block_of_flats",
+      "original_name": "HOUSETYPE_MODE_block of flats",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "HOUSETYPE_MODE_specific_housing",
+      "original_name": "HOUSETYPE_MODE_specific housing",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "HOUSETYPE_MODE_terraced_house",
+      "original_name": "HOUSETYPE_MODE_terraced house",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WALLSMATERIAL_MODE_Block",
+      "original_name": "WALLSMATERIAL_MODE_Block",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WALLSMATERIAL_MODE_Mixed",
+      "original_name": "WALLSMATERIAL_MODE_Mixed",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WALLSMATERIAL_MODE_Monolithic",
+      "original_name": "WALLSMATERIAL_MODE_Monolithic",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WALLSMATERIAL_MODE_Others",
+      "original_name": "WALLSMATERIAL_MODE_Others",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WALLSMATERIAL_MODE_Panel",
+      "original_name": "WALLSMATERIAL_MODE_Panel",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WALLSMATERIAL_MODE_Stone_brick",
+      "original_name": "WALLSMATERIAL_MODE_Stone, brick",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "WALLSMATERIAL_MODE_Wooden",
+      "original_name": "WALLSMATERIAL_MODE_Wooden",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "EMERGENCYSTATE_MODE_No",
+      "original_name": "EMERGENCYSTATE_MODE_No",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "EMERGENCYSTATE_MODE_Yes",
+      "original_name": "EMERGENCYSTATE_MODE_Yes",
+      "source_dtype": "bool"
+    },
+    {
+      "name": "AGE_YEARS",
+      "original_name": "AGE_YEARS",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "EMPLOYED_YEARS",
+      "original_name": "EMPLOYED_YEARS",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "REGISTRATION_YEARS",
+      "original_name": "REGISTRATION_YEARS",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "ID_PUBLISH_YEARS",
+      "original_name": "ID_PUBLISH_YEARS",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CREDIT_INCOME_RATIO",
+      "original_name": "CREDIT_INCOME_RATIO",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "ANNUITY_INCOME_RATIO",
+      "original_name": "ANNUITY_INCOME_RATIO",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CREDIT_ANNUITY_RATIO",
+      "original_name": "CREDIT_ANNUITY_RATIO",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "GOODS_CREDIT_RATIO",
+      "original_name": "GOODS_CREDIT_RATIO",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INCOME_PER_PERSON",
+      "original_name": "INCOME_PER_PERSON",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "ANNUITY_PER_PERSON",
+      "original_name": "ANNUITY_PER_PERSON",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "EMPLOYED_AGE_RATIO",
+      "original_name": "EMPLOYED_AGE_RATIO",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CHILDREN_FAMILY_RATIO",
+      "original_name": "CHILDREN_FAMILY_RATIO",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "EXT_SOURCE_MEAN",
+      "original_name": "EXT_SOURCE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "EXT_SOURCE_MIN",
+      "original_name": "EXT_SOURCE_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "EXT_SOURCE_MAX",
+      "original_name": "EXT_SOURCE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "EXT_SOURCE_STD",
+      "original_name": "EXT_SOURCE_STD",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "DOCUMENT_COUNT",
+      "original_name": "DOCUMENT_COUNT",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "CONTACT_INFO_COUNT",
+      "original_name": "CONTACT_INFO_COUNT",
+      "source_dtype": "int64"
+    },
+    {
+      "name": "BUREAU_SK_ID_BUREAU_COUNT",
+      "original_name": "BUREAU_SK_ID_BUREAU_COUNT",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_DAYS_CREDIT_MEAN",
+      "original_name": "BUREAU_DAYS_CREDIT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_DAYS_CREDIT_MIN",
+      "original_name": "BUREAU_DAYS_CREDIT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_DAYS_CREDIT_MAX",
+      "original_name": "BUREAU_DAYS_CREDIT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_CREDIT_DAY_OVERDUE_MEAN",
+      "original_name": "BUREAU_CREDIT_DAY_OVERDUE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_CREDIT_DAY_OVERDUE_MAX",
+      "original_name": "BUREAU_CREDIT_DAY_OVERDUE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_DAYS_CREDIT_ENDDATE_MEAN",
+      "original_name": "BUREAU_DAYS_CREDIT_ENDDATE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_DAYS_CREDIT_ENDDATE_MIN",
+      "original_name": "BUREAU_DAYS_CREDIT_ENDDATE_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_DAYS_CREDIT_ENDDATE_MAX",
+      "original_name": "BUREAU_DAYS_CREDIT_ENDDATE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_DAYS_ENDDATE_FACT_MEAN",
+      "original_name": "BUREAU_DAYS_ENDDATE_FACT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_DAYS_ENDDATE_FACT_MIN",
+      "original_name": "BUREAU_DAYS_ENDDATE_FACT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_DAYS_ENDDATE_FACT_MAX",
+      "original_name": "BUREAU_DAYS_ENDDATE_FACT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MEAN",
+      "original_name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MAX",
+      "original_name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_CNT_CREDIT_PROLONG_SUM",
+      "original_name": "BUREAU_CNT_CREDIT_PROLONG_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_CNT_CREDIT_PROLONG_MEAN",
+      "original_name": "BUREAU_CNT_CREDIT_PROLONG_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_SUM",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_MEAN",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_MAX",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_MIN",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_DEBT_SUM",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_DEBT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_DEBT_MEAN",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_DEBT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_DEBT_MAX",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_DEBT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_LIMIT_SUM",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_LIMIT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_LIMIT_MEAN",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_LIMIT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_SUM",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MEAN",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MAX",
+      "original_name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_ANNUITY_SUM",
+      "original_name": "BUREAU_AMT_ANNUITY_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_ANNUITY_MEAN",
+      "original_name": "BUREAU_AMT_ANNUITY_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_AMT_ANNUITY_MAX",
+      "original_name": "BUREAU_AMT_ANNUITY_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BUREAU_IS_ACTIVE_SUM",
+      "original_name": "BUREAU_BUREAU_IS_ACTIVE_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BUREAU_IS_ACTIVE_MEAN",
+      "original_name": "BUREAU_BUREAU_IS_ACTIVE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BUREAU_IS_CLOSED_SUM",
+      "original_name": "BUREAU_BUREAU_IS_CLOSED_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BUREAU_IS_CLOSED_MEAN",
+      "original_name": "BUREAU_BUREAU_IS_CLOSED_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BUREAU_HAS_OVERDUE_SUM",
+      "original_name": "BUREAU_BUREAU_HAS_OVERDUE_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BUREAU_HAS_OVERDUE_MEAN",
+      "original_name": "BUREAU_BUREAU_HAS_OVERDUE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BUREAU_DEBT_CREDIT_RATIO_MEAN",
+      "original_name": "BUREAU_BUREAU_DEBT_CREDIT_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BUREAU_DEBT_CREDIT_RATIO_MAX",
+      "original_name": "BUREAU_BUREAU_DEBT_CREDIT_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BUREAU_OVERDUE_CREDIT_RATIO_MEAN",
+      "original_name": "BUREAU_BUREAU_OVERDUE_CREDIT_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BUREAU_OVERDUE_CREDIT_RATIO_MAX",
+      "original_name": "BUREAU_BUREAU_OVERDUE_CREDIT_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_MONTHS_COUNT_MEAN",
+      "original_name": "BUREAU_BB_MONTHS_COUNT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_MONTHS_COUNT_MAX",
+      "original_name": "BUREAU_BB_MONTHS_COUNT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_MONTHS_COUNT_SUM",
+      "original_name": "BUREAU_BB_MONTHS_COUNT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_MONTHS_MIN_MEAN",
+      "original_name": "BUREAU_BB_MONTHS_MIN_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_MONTHS_MIN_MAX",
+      "original_name": "BUREAU_BB_MONTHS_MIN_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_MONTHS_MIN_SUM",
+      "original_name": "BUREAU_BB_MONTHS_MIN_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_MONTHS_MAX_MEAN",
+      "original_name": "BUREAU_BB_MONTHS_MAX_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_MONTHS_MAX_MAX",
+      "original_name": "BUREAU_BB_MONTHS_MAX_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_MONTHS_MAX_SUM",
+      "original_name": "BUREAU_BB_MONTHS_MAX_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_0_COUNT_MEAN",
+      "original_name": "BUREAU_BB_STATUS_0_COUNT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_0_COUNT_MAX",
+      "original_name": "BUREAU_BB_STATUS_0_COUNT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_0_COUNT_SUM",
+      "original_name": "BUREAU_BB_STATUS_0_COUNT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_1_COUNT_MEAN",
+      "original_name": "BUREAU_BB_STATUS_1_COUNT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_1_COUNT_MAX",
+      "original_name": "BUREAU_BB_STATUS_1_COUNT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_1_COUNT_SUM",
+      "original_name": "BUREAU_BB_STATUS_1_COUNT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_2_COUNT_MEAN",
+      "original_name": "BUREAU_BB_STATUS_2_COUNT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_2_COUNT_MAX",
+      "original_name": "BUREAU_BB_STATUS_2_COUNT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_2_COUNT_SUM",
+      "original_name": "BUREAU_BB_STATUS_2_COUNT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_3_COUNT_MEAN",
+      "original_name": "BUREAU_BB_STATUS_3_COUNT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_3_COUNT_MAX",
+      "original_name": "BUREAU_BB_STATUS_3_COUNT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_3_COUNT_SUM",
+      "original_name": "BUREAU_BB_STATUS_3_COUNT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_4_COUNT_MEAN",
+      "original_name": "BUREAU_BB_STATUS_4_COUNT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_4_COUNT_MAX",
+      "original_name": "BUREAU_BB_STATUS_4_COUNT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_4_COUNT_SUM",
+      "original_name": "BUREAU_BB_STATUS_4_COUNT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_5_COUNT_MEAN",
+      "original_name": "BUREAU_BB_STATUS_5_COUNT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_5_COUNT_MAX",
+      "original_name": "BUREAU_BB_STATUS_5_COUNT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_5_COUNT_SUM",
+      "original_name": "BUREAU_BB_STATUS_5_COUNT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_C_COUNT_MEAN",
+      "original_name": "BUREAU_BB_STATUS_C_COUNT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_C_COUNT_MAX",
+      "original_name": "BUREAU_BB_STATUS_C_COUNT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_C_COUNT_SUM",
+      "original_name": "BUREAU_BB_STATUS_C_COUNT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_X_COUNT_MEAN",
+      "original_name": "BUREAU_BB_STATUS_X_COUNT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_X_COUNT_MAX",
+      "original_name": "BUREAU_BB_STATUS_X_COUNT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_X_COUNT_SUM",
+      "original_name": "BUREAU_BB_STATUS_X_COUNT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_0_RATIO_MEAN",
+      "original_name": "BUREAU_BB_STATUS_0_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_0_RATIO_MAX",
+      "original_name": "BUREAU_BB_STATUS_0_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_0_RATIO_SUM",
+      "original_name": "BUREAU_BB_STATUS_0_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_1_RATIO_MEAN",
+      "original_name": "BUREAU_BB_STATUS_1_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_1_RATIO_MAX",
+      "original_name": "BUREAU_BB_STATUS_1_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_1_RATIO_SUM",
+      "original_name": "BUREAU_BB_STATUS_1_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_2_RATIO_MEAN",
+      "original_name": "BUREAU_BB_STATUS_2_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_2_RATIO_MAX",
+      "original_name": "BUREAU_BB_STATUS_2_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_2_RATIO_SUM",
+      "original_name": "BUREAU_BB_STATUS_2_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_3_RATIO_MEAN",
+      "original_name": "BUREAU_BB_STATUS_3_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_3_RATIO_MAX",
+      "original_name": "BUREAU_BB_STATUS_3_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_3_RATIO_SUM",
+      "original_name": "BUREAU_BB_STATUS_3_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_4_RATIO_MEAN",
+      "original_name": "BUREAU_BB_STATUS_4_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_4_RATIO_MAX",
+      "original_name": "BUREAU_BB_STATUS_4_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_4_RATIO_SUM",
+      "original_name": "BUREAU_BB_STATUS_4_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_5_RATIO_MEAN",
+      "original_name": "BUREAU_BB_STATUS_5_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_5_RATIO_MAX",
+      "original_name": "BUREAU_BB_STATUS_5_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_5_RATIO_SUM",
+      "original_name": "BUREAU_BB_STATUS_5_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_C_RATIO_MEAN",
+      "original_name": "BUREAU_BB_STATUS_C_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_C_RATIO_MAX",
+      "original_name": "BUREAU_BB_STATUS_C_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_C_RATIO_SUM",
+      "original_name": "BUREAU_BB_STATUS_C_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_X_RATIO_MEAN",
+      "original_name": "BUREAU_BB_STATUS_X_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_X_RATIO_MAX",
+      "original_name": "BUREAU_BB_STATUS_X_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "BUREAU_BB_STATUS_X_RATIO_SUM",
+      "original_name": "BUREAU_BB_STATUS_X_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_SK_ID_PREV_COUNT",
+      "original_name": "PREV_SK_ID_PREV_COUNT",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_ANNUITY_MEAN",
+      "original_name": "PREV_AMT_ANNUITY_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_ANNUITY_MAX",
+      "original_name": "PREV_AMT_ANNUITY_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_ANNUITY_SUM",
+      "original_name": "PREV_AMT_ANNUITY_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_APPLICATION_MEAN",
+      "original_name": "PREV_AMT_APPLICATION_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_APPLICATION_MAX",
+      "original_name": "PREV_AMT_APPLICATION_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_APPLICATION_SUM",
+      "original_name": "PREV_AMT_APPLICATION_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_CREDIT_MEAN",
+      "original_name": "PREV_AMT_CREDIT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_CREDIT_MAX",
+      "original_name": "PREV_AMT_CREDIT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_CREDIT_SUM",
+      "original_name": "PREV_AMT_CREDIT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_DOWN_PAYMENT_MEAN",
+      "original_name": "PREV_AMT_DOWN_PAYMENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_DOWN_PAYMENT_MAX",
+      "original_name": "PREV_AMT_DOWN_PAYMENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_DOWN_PAYMENT_SUM",
+      "original_name": "PREV_AMT_DOWN_PAYMENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_GOODS_PRICE_MEAN",
+      "original_name": "PREV_AMT_GOODS_PRICE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_AMT_GOODS_PRICE_MAX",
+      "original_name": "PREV_AMT_GOODS_PRICE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_HOUR_APPR_PROCESS_START_MEAN",
+      "original_name": "PREV_HOUR_APPR_PROCESS_START_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_RATE_DOWN_PAYMENT_MEAN",
+      "original_name": "PREV_RATE_DOWN_PAYMENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_RATE_DOWN_PAYMENT_MAX",
+      "original_name": "PREV_RATE_DOWN_PAYMENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_DAYS_DECISION_MEAN",
+      "original_name": "PREV_DAYS_DECISION_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_DAYS_DECISION_MIN",
+      "original_name": "PREV_DAYS_DECISION_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_DAYS_DECISION_MAX",
+      "original_name": "PREV_DAYS_DECISION_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_CNT_PAYMENT_MEAN",
+      "original_name": "PREV_CNT_PAYMENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_CNT_PAYMENT_MAX",
+      "original_name": "PREV_CNT_PAYMENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_CNT_PAYMENT_SUM",
+      "original_name": "PREV_CNT_PAYMENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_IS_APPROVED_SUM",
+      "original_name": "PREV_PREV_IS_APPROVED_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_IS_APPROVED_MEAN",
+      "original_name": "PREV_PREV_IS_APPROVED_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_IS_REFUSED_SUM",
+      "original_name": "PREV_PREV_IS_REFUSED_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_IS_REFUSED_MEAN",
+      "original_name": "PREV_PREV_IS_REFUSED_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_IS_CANCELED_SUM",
+      "original_name": "PREV_PREV_IS_CANCELED_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_IS_CANCELED_MEAN",
+      "original_name": "PREV_PREV_IS_CANCELED_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_CREDIT_APPLICATION_RATIO_MEAN",
+      "original_name": "PREV_PREV_CREDIT_APPLICATION_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_CREDIT_APPLICATION_RATIO_MAX",
+      "original_name": "PREV_PREV_CREDIT_APPLICATION_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_DOWN_PAYMENT_RATIO_MEAN",
+      "original_name": "PREV_PREV_DOWN_PAYMENT_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_DOWN_PAYMENT_RATIO_MAX",
+      "original_name": "PREV_PREV_DOWN_PAYMENT_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_ANNUITY_CREDIT_RATIO_MEAN",
+      "original_name": "PREV_PREV_ANNUITY_CREDIT_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "PREV_PREV_ANNUITY_CREDIT_RATIO_MAX",
+      "original_name": "PREV_PREV_ANNUITY_CREDIT_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_SK_ID_PREV_NUNIQUE",
+      "original_name": "INST_SK_ID_PREV_NUNIQUE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_NUM_INSTALMENT_VERSION_NUNIQUE",
+      "original_name": "INST_NUM_INSTALMENT_VERSION_NUNIQUE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_NUM_INSTALMENT_VERSION_MEAN",
+      "original_name": "INST_NUM_INSTALMENT_VERSION_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_NUM_INSTALMENT_NUMBER_MAX",
+      "original_name": "INST_NUM_INSTALMENT_NUMBER_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_NUM_INSTALMENT_NUMBER_COUNT",
+      "original_name": "INST_NUM_INSTALMENT_NUMBER_COUNT",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_DAYS_INSTALMENT_MEAN",
+      "original_name": "INST_DAYS_INSTALMENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_DAYS_INSTALMENT_MIN",
+      "original_name": "INST_DAYS_INSTALMENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_DAYS_INSTALMENT_MAX",
+      "original_name": "INST_DAYS_INSTALMENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_DAYS_ENTRY_PAYMENT_MEAN",
+      "original_name": "INST_DAYS_ENTRY_PAYMENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_DAYS_ENTRY_PAYMENT_MIN",
+      "original_name": "INST_DAYS_ENTRY_PAYMENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_DAYS_ENTRY_PAYMENT_MAX",
+      "original_name": "INST_DAYS_ENTRY_PAYMENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_AMT_INSTALMENT_SUM",
+      "original_name": "INST_AMT_INSTALMENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_AMT_INSTALMENT_MEAN",
+      "original_name": "INST_AMT_INSTALMENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_AMT_INSTALMENT_MAX",
+      "original_name": "INST_AMT_INSTALMENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_AMT_PAYMENT_SUM",
+      "original_name": "INST_AMT_PAYMENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_AMT_PAYMENT_MEAN",
+      "original_name": "INST_AMT_PAYMENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_AMT_PAYMENT_MAX",
+      "original_name": "INST_AMT_PAYMENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_DELAY_DAYS_MEAN",
+      "original_name": "INST_INSTALLMENT_DELAY_DAYS_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_DELAY_DAYS_MAX",
+      "original_name": "INST_INSTALLMENT_DELAY_DAYS_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_DELAY_DAYS_SUM",
+      "original_name": "INST_INSTALLMENT_DELAY_DAYS_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_LATE_SUM",
+      "original_name": "INST_INSTALLMENT_LATE_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_LATE_MEAN",
+      "original_name": "INST_INSTALLMENT_LATE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_EARLY_SUM",
+      "original_name": "INST_INSTALLMENT_EARLY_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_EARLY_MEAN",
+      "original_name": "INST_INSTALLMENT_EARLY_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_PAYMENT_DIFFERENCE_MEAN",
+      "original_name": "INST_INSTALLMENT_PAYMENT_DIFFERENCE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_PAYMENT_DIFFERENCE_MAX",
+      "original_name": "INST_INSTALLMENT_PAYMENT_DIFFERENCE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_PAYMENT_DIFFERENCE_SUM",
+      "original_name": "INST_INSTALLMENT_PAYMENT_DIFFERENCE_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_UNDERPAID_SUM",
+      "original_name": "INST_INSTALLMENT_UNDERPAID_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_UNDERPAID_MEAN",
+      "original_name": "INST_INSTALLMENT_UNDERPAID_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_PAYMENT_RATIO_MEAN",
+      "original_name": "INST_INSTALLMENT_PAYMENT_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_PAYMENT_RATIO_MIN",
+      "original_name": "INST_INSTALLMENT_PAYMENT_RATIO_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "INST_INSTALLMENT_PAYMENT_RATIO_MAX",
+      "original_name": "INST_INSTALLMENT_PAYMENT_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_SK_ID_PREV_NUNIQUE",
+      "original_name": "POS_SK_ID_PREV_NUNIQUE",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_MONTHS_BALANCE_COUNT",
+      "original_name": "POS_MONTHS_BALANCE_COUNT",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_MONTHS_BALANCE_MEAN",
+      "original_name": "POS_MONTHS_BALANCE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_MONTHS_BALANCE_MIN",
+      "original_name": "POS_MONTHS_BALANCE_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_MONTHS_BALANCE_MAX",
+      "original_name": "POS_MONTHS_BALANCE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_CNT_INSTALMENT_MEAN",
+      "original_name": "POS_CNT_INSTALMENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_CNT_INSTALMENT_MAX",
+      "original_name": "POS_CNT_INSTALMENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_CNT_INSTALMENT_SUM",
+      "original_name": "POS_CNT_INSTALMENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_CNT_INSTALMENT_FUTURE_MEAN",
+      "original_name": "POS_CNT_INSTALMENT_FUTURE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_CNT_INSTALMENT_FUTURE_MAX",
+      "original_name": "POS_CNT_INSTALMENT_FUTURE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_CNT_INSTALMENT_FUTURE_SUM",
+      "original_name": "POS_CNT_INSTALMENT_FUTURE_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_SK_DPD_MEAN",
+      "original_name": "POS_SK_DPD_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_SK_DPD_MAX",
+      "original_name": "POS_SK_DPD_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_SK_DPD_SUM",
+      "original_name": "POS_SK_DPD_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_SK_DPD_DEF_MEAN",
+      "original_name": "POS_SK_DPD_DEF_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_SK_DPD_DEF_MAX",
+      "original_name": "POS_SK_DPD_DEF_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_SK_DPD_DEF_SUM",
+      "original_name": "POS_SK_DPD_DEF_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_POS_HAS_DPD_SUM",
+      "original_name": "POS_POS_HAS_DPD_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_POS_HAS_DPD_MEAN",
+      "original_name": "POS_POS_HAS_DPD_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_POS_HAS_DPD_DEF_SUM",
+      "original_name": "POS_POS_HAS_DPD_DEF_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "POS_POS_HAS_DPD_DEF_MEAN",
+      "original_name": "POS_POS_HAS_DPD_DEF_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_MONTHS_BALANCE_MEAN",
+      "original_name": "CC_MONTHS_BALANCE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_MONTHS_BALANCE_MAX",
+      "original_name": "CC_MONTHS_BALANCE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_MONTHS_BALANCE_MIN",
+      "original_name": "CC_MONTHS_BALANCE_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_MONTHS_BALANCE_SUM",
+      "original_name": "CC_MONTHS_BALANCE_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_BALANCE_MEAN",
+      "original_name": "CC_AMT_BALANCE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_BALANCE_MAX",
+      "original_name": "CC_AMT_BALANCE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_BALANCE_MIN",
+      "original_name": "CC_AMT_BALANCE_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_BALANCE_SUM",
+      "original_name": "CC_AMT_BALANCE_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_CREDIT_LIMIT_ACTUAL_MEAN",
+      "original_name": "CC_AMT_CREDIT_LIMIT_ACTUAL_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_CREDIT_LIMIT_ACTUAL_MAX",
+      "original_name": "CC_AMT_CREDIT_LIMIT_ACTUAL_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_CREDIT_LIMIT_ACTUAL_MIN",
+      "original_name": "CC_AMT_CREDIT_LIMIT_ACTUAL_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_CREDIT_LIMIT_ACTUAL_SUM",
+      "original_name": "CC_AMT_CREDIT_LIMIT_ACTUAL_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_ATM_CURRENT_MEAN",
+      "original_name": "CC_AMT_DRAWINGS_ATM_CURRENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_ATM_CURRENT_MAX",
+      "original_name": "CC_AMT_DRAWINGS_ATM_CURRENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_ATM_CURRENT_MIN",
+      "original_name": "CC_AMT_DRAWINGS_ATM_CURRENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_ATM_CURRENT_SUM",
+      "original_name": "CC_AMT_DRAWINGS_ATM_CURRENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_CURRENT_MEAN",
+      "original_name": "CC_AMT_DRAWINGS_CURRENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_CURRENT_MAX",
+      "original_name": "CC_AMT_DRAWINGS_CURRENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_CURRENT_MIN",
+      "original_name": "CC_AMT_DRAWINGS_CURRENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_CURRENT_SUM",
+      "original_name": "CC_AMT_DRAWINGS_CURRENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_OTHER_CURRENT_MEAN",
+      "original_name": "CC_AMT_DRAWINGS_OTHER_CURRENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_OTHER_CURRENT_MAX",
+      "original_name": "CC_AMT_DRAWINGS_OTHER_CURRENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_OTHER_CURRENT_MIN",
+      "original_name": "CC_AMT_DRAWINGS_OTHER_CURRENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_OTHER_CURRENT_SUM",
+      "original_name": "CC_AMT_DRAWINGS_OTHER_CURRENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_POS_CURRENT_MEAN",
+      "original_name": "CC_AMT_DRAWINGS_POS_CURRENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_POS_CURRENT_MAX",
+      "original_name": "CC_AMT_DRAWINGS_POS_CURRENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_POS_CURRENT_MIN",
+      "original_name": "CC_AMT_DRAWINGS_POS_CURRENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_DRAWINGS_POS_CURRENT_SUM",
+      "original_name": "CC_AMT_DRAWINGS_POS_CURRENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_INST_MIN_REGULARITY_MEAN",
+      "original_name": "CC_AMT_INST_MIN_REGULARITY_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_INST_MIN_REGULARITY_MAX",
+      "original_name": "CC_AMT_INST_MIN_REGULARITY_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_INST_MIN_REGULARITY_MIN",
+      "original_name": "CC_AMT_INST_MIN_REGULARITY_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_INST_MIN_REGULARITY_SUM",
+      "original_name": "CC_AMT_INST_MIN_REGULARITY_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_PAYMENT_CURRENT_MEAN",
+      "original_name": "CC_AMT_PAYMENT_CURRENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_PAYMENT_CURRENT_MAX",
+      "original_name": "CC_AMT_PAYMENT_CURRENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_PAYMENT_CURRENT_MIN",
+      "original_name": "CC_AMT_PAYMENT_CURRENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_PAYMENT_CURRENT_SUM",
+      "original_name": "CC_AMT_PAYMENT_CURRENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_PAYMENT_TOTAL_CURRENT_MEAN",
+      "original_name": "CC_AMT_PAYMENT_TOTAL_CURRENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_PAYMENT_TOTAL_CURRENT_MAX",
+      "original_name": "CC_AMT_PAYMENT_TOTAL_CURRENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_PAYMENT_TOTAL_CURRENT_MIN",
+      "original_name": "CC_AMT_PAYMENT_TOTAL_CURRENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_PAYMENT_TOTAL_CURRENT_SUM",
+      "original_name": "CC_AMT_PAYMENT_TOTAL_CURRENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_RECEIVABLE_PRINCIPAL_MEAN",
+      "original_name": "CC_AMT_RECEIVABLE_PRINCIPAL_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_RECEIVABLE_PRINCIPAL_MAX",
+      "original_name": "CC_AMT_RECEIVABLE_PRINCIPAL_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_RECEIVABLE_PRINCIPAL_MIN",
+      "original_name": "CC_AMT_RECEIVABLE_PRINCIPAL_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_RECEIVABLE_PRINCIPAL_SUM",
+      "original_name": "CC_AMT_RECEIVABLE_PRINCIPAL_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_RECIVABLE_MEAN",
+      "original_name": "CC_AMT_RECIVABLE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_RECIVABLE_MAX",
+      "original_name": "CC_AMT_RECIVABLE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_RECIVABLE_MIN",
+      "original_name": "CC_AMT_RECIVABLE_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_RECIVABLE_SUM",
+      "original_name": "CC_AMT_RECIVABLE_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_TOTAL_RECEIVABLE_MEAN",
+      "original_name": "CC_AMT_TOTAL_RECEIVABLE_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_TOTAL_RECEIVABLE_MAX",
+      "original_name": "CC_AMT_TOTAL_RECEIVABLE_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_TOTAL_RECEIVABLE_MIN",
+      "original_name": "CC_AMT_TOTAL_RECEIVABLE_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_AMT_TOTAL_RECEIVABLE_SUM",
+      "original_name": "CC_AMT_TOTAL_RECEIVABLE_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_ATM_CURRENT_MEAN",
+      "original_name": "CC_CNT_DRAWINGS_ATM_CURRENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_ATM_CURRENT_MAX",
+      "original_name": "CC_CNT_DRAWINGS_ATM_CURRENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_ATM_CURRENT_MIN",
+      "original_name": "CC_CNT_DRAWINGS_ATM_CURRENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_ATM_CURRENT_SUM",
+      "original_name": "CC_CNT_DRAWINGS_ATM_CURRENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_CURRENT_MEAN",
+      "original_name": "CC_CNT_DRAWINGS_CURRENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_CURRENT_MAX",
+      "original_name": "CC_CNT_DRAWINGS_CURRENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_CURRENT_MIN",
+      "original_name": "CC_CNT_DRAWINGS_CURRENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_CURRENT_SUM",
+      "original_name": "CC_CNT_DRAWINGS_CURRENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_OTHER_CURRENT_MEAN",
+      "original_name": "CC_CNT_DRAWINGS_OTHER_CURRENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_OTHER_CURRENT_MAX",
+      "original_name": "CC_CNT_DRAWINGS_OTHER_CURRENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_OTHER_CURRENT_MIN",
+      "original_name": "CC_CNT_DRAWINGS_OTHER_CURRENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_OTHER_CURRENT_SUM",
+      "original_name": "CC_CNT_DRAWINGS_OTHER_CURRENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_POS_CURRENT_MEAN",
+      "original_name": "CC_CNT_DRAWINGS_POS_CURRENT_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_POS_CURRENT_MAX",
+      "original_name": "CC_CNT_DRAWINGS_POS_CURRENT_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_POS_CURRENT_MIN",
+      "original_name": "CC_CNT_DRAWINGS_POS_CURRENT_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_DRAWINGS_POS_CURRENT_SUM",
+      "original_name": "CC_CNT_DRAWINGS_POS_CURRENT_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_INSTALMENT_MATURE_CUM_MEAN",
+      "original_name": "CC_CNT_INSTALMENT_MATURE_CUM_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_INSTALMENT_MATURE_CUM_MAX",
+      "original_name": "CC_CNT_INSTALMENT_MATURE_CUM_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_INSTALMENT_MATURE_CUM_MIN",
+      "original_name": "CC_CNT_INSTALMENT_MATURE_CUM_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CNT_INSTALMENT_MATURE_CUM_SUM",
+      "original_name": "CC_CNT_INSTALMENT_MATURE_CUM_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_SK_DPD_MEAN",
+      "original_name": "CC_SK_DPD_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_SK_DPD_MAX",
+      "original_name": "CC_SK_DPD_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_SK_DPD_MIN",
+      "original_name": "CC_SK_DPD_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_SK_DPD_SUM",
+      "original_name": "CC_SK_DPD_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_SK_DPD_DEF_MEAN",
+      "original_name": "CC_SK_DPD_DEF_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_SK_DPD_DEF_MAX",
+      "original_name": "CC_SK_DPD_DEF_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_SK_DPD_DEF_SUM",
+      "original_name": "CC_SK_DPD_DEF_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_UTILIZATION_RATIO_MEAN",
+      "original_name": "CC_CC_UTILIZATION_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_UTILIZATION_RATIO_MAX",
+      "original_name": "CC_CC_UTILIZATION_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_UTILIZATION_RATIO_MIN",
+      "original_name": "CC_CC_UTILIZATION_RATIO_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_UTILIZATION_RATIO_SUM",
+      "original_name": "CC_CC_UTILIZATION_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_DRAWINGS_RATIO_MEAN",
+      "original_name": "CC_CC_DRAWINGS_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_DRAWINGS_RATIO_MAX",
+      "original_name": "CC_CC_DRAWINGS_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_DRAWINGS_RATIO_MIN",
+      "original_name": "CC_CC_DRAWINGS_RATIO_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_DRAWINGS_RATIO_SUM",
+      "original_name": "CC_CC_DRAWINGS_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_PAYMENT_MIN_RATIO_MEAN",
+      "original_name": "CC_CC_PAYMENT_MIN_RATIO_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_PAYMENT_MIN_RATIO_MAX",
+      "original_name": "CC_CC_PAYMENT_MIN_RATIO_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_PAYMENT_MIN_RATIO_MIN",
+      "original_name": "CC_CC_PAYMENT_MIN_RATIO_MIN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_PAYMENT_MIN_RATIO_SUM",
+      "original_name": "CC_CC_PAYMENT_MIN_RATIO_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_HAS_DPD_MEAN",
+      "original_name": "CC_CC_HAS_DPD_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_HAS_DPD_MAX",
+      "original_name": "CC_CC_HAS_DPD_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_HAS_DPD_SUM",
+      "original_name": "CC_CC_HAS_DPD_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_HAS_DPD_DEF_MEAN",
+      "original_name": "CC_CC_HAS_DPD_DEF_MEAN",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_HAS_DPD_DEF_MAX",
+      "original_name": "CC_CC_HAS_DPD_DEF_MAX",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_CC_HAS_DPD_DEF_SUM",
+      "original_name": "CC_CC_HAS_DPD_DEF_SUM",
+      "source_dtype": "float64"
+    },
+    {
+      "name": "CC_SK_ID_PREV_NUNIQUE",
+      "original_name": "CC_SK_ID_PREV_NUNIQUE",
+      "source_dtype": "float64"
+    }
+  ]
+}
