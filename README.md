@@ -232,18 +232,24 @@ du chiffrement en transit et une gestion adaptée des accès aux données.
 
 ## Rapport de monitoring et analyse du drift
 
-Le rapport livré est :
+Le notebook exécuté demandé pour la remise est :
 
-```text
-reports/monitoring_report.html
-```
+`notebooks/Ramananjaona_Marin_6_analyse_data_drift_092026.ipynb`
 
-Il contient :
+Une version HTML du rapport est également disponible :
 
-- comparaison de distributions et taux de valeurs manquantes ;
-- distribution des scores ;
-- taux d’erreur et durées d’exécution ;
-- alertes, interprétation et limites.
+`reports/monitoring_report.html`
+
+L’analyse contient :
+
+- la comparaison des distributions et des taux de valeurs manquantes ;
+- la distribution des scores ;
+- le taux d’erreur et les durées d’exécution ;
+- les alertes, leur interprétation et les limites.
+
+Les sorties enregistrées dans le notebook permettent de consulter les
+résultats sans disposer des données locales. Sa réexécution nécessite
+les fichiers de référence et les exports décrits ci-dessous.
 
 ### Données utilisées
 
