@@ -1,0 +1,37 @@
+{
+  "executions": {
+    "avant": "61dec5cd-789a-4112-be00-bed1d51f1ddc",
+    "apres": "458e1b3d-1a3e-459d-b5f2-d992df3de378"
+  },
+  "clients_compares": 1000,
+  "ecart_maximal_score": 0.0,
+  "decisions_modifiees": 0,
+  "seuils_identiques": true,
+  "mesures": [
+    {
+      "mesure": "inference_mediane_ms",
+      "avant": 0.5777919977845158,
+      "apres": 0.5647295001836028,
+      "reduction_pct": 2.260761251626858
+    },
+    {
+      "mesure": "traitement_median_ms",
+      "avant": 3.6459580005612224,
+      "apres": 2.287416999024572,
+      "reduction_pct": 37.26156476096352
+    },
+    {
+      "mesure": "latence_mediane_ms",
+      "avant": 6.124978999999753,
+      "apres": 4.462541500000028,
+      "reduction_pct": 27.141929792735485
+    },
+    {
+      "mesure": "latence_p95_ms",
+      "avant": 7.593702400000379,
+      "apres": 5.987768749999977,
+      "reduction_pct": 21.14823001228389
+    }
+  ],
+  "limite": "Comparaison de deux executions sequentielles locales. Les variations de charge de la machine ne sont pas controlees."
+}

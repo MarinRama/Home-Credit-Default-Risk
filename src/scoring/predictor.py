@@ -33,6 +33,9 @@ INTEGER_FEATURES = {
     "CNT_FAM_MEMBERS",
 }
 
+class InputValidationError(ValueError):
+    """Les variables fournies ne respectent pas le contrat du modèle."""
+
 class CreditPredictor:
     def __init__(self, models_dir=None):
         models_dir = (
@@ -152,8 +155,12 @@ class CreditPredictor:
         )
 
 
+
     def predict(self, features, timings=None):
-        prepared = self.prepare_input(features)
+        try:
+            prepared = self.prepare_input(features)
+        except ValueError as error:
+            raise InputValidationError(str(error)) from error
 
         start = perf_counter()
 
